@@ -25,7 +25,7 @@ El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 
 
 Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña.
 
-### [Recopilar tus kills](https://garzanox.github.io/noxcut/#video-kills) (0:41)
+### [Recopilar tus kills](https://garzanox.github.io/noxcut/#video-kills) (0:39)
 
 [![Recopilar tus kills](kills.jpg)](https://garzanox.github.io/noxcut/#video-kills)
 
