@@ -20,11 +20,23 @@
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; }
-body { background: var(--bg); color: var(--ink); font-family: var(--body); display: flex; flex-direction: column; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); }
+.deck { min-height: 100vh; display: flex; flex-direction: column; }
 header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 14px 20px 6px; }
 header h1 { font-family: var(--display); font-size: 1.25rem; letter-spacing: .08em; color: var(--accent); margin: 0; }
 header p { margin: 0; color: var(--muted); font-size: .95rem; text-wrap: balance; }
+header a { color: var(--amber); font-weight: 600; }
+#videos { max-width: 1240px; margin: 0 auto; padding: 32px 20px 56px; }
+#videos h2 { font-family: var(--display); color: var(--amber); font-size: 1.6rem; margin: 0 0 6px; }
+#videos > p { color: var(--muted); margin: 0 0 22px; max-width: 70ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 22px; }
+.grid article { background: var(--panel); border: 1px solid #2c2b42; border-radius: 12px; overflow: hidden; }
+.grid video { display: block; width: 100%; aspect-ratio: 16 / 10; background: #000; }
+.grid h3 { font-family: var(--display); font-size: 1.05rem; margin: 14px 16px 6px; }
+.grid p { color: var(--muted); margin: 0 16px 16px; line-height: 1.45; font-size: .95rem; }
+.grid .dur { color: var(--accent); font-variant-numeric: tabular-nums; }
+footer { color: var(--muted); text-align: center; font-size: .85rem; padding: 0 20px 28px; }
 main { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 8px 16px; }
 .stage { position: relative; width: min(100%, calc((100vh - 150px) * 16 / 9)); aspect-ratio: 16 / 9; }
 .stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 10px;
@@ -47,9 +59,11 @@ button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
 </style>
 </head>
 <body>
+<div class="deck">
 <header>
   <h1>NOXCUT</h1>
-  <p>Editor de vídeos verticales con subtítulos palabra a palabra, hecho por un streamer de Valorant. ¿Qué te parece?</p>
+  <p>Editor de vídeos verticales con subtítulos palabra a palabra, hecho por un streamer de Valorant. ¿Qué te parece?
+  <a href="#videos">Míralo funcionando ↓</a></p>
 </header>
 <main>
   <div class="stage" id="stage">
@@ -81,6 +95,50 @@ button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
   <div class="dots" id="dots"></div>
   <button class="ctl" id="full">Pantalla completa</button>
 </nav>
+</div>
+<section id="videos">
+<h2>Míralo funcionando</h2>
+<p>Vídeos grabados usando NoxCut de verdad, sin montajes. Se vuelven a grabar cada vez que algo cambia. Los nombres de otros jugadores salen pixelados.</p>
+<div class="grid">
+  <article>
+    <video controls preload="none" playsinline poster="videos/voz.jpg" src="videos/voz.mp4"
+           aria-label="Editar con la voz"></video>
+    <h3>Editar con la voz</h3>
+    <p>Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti. <span class="dur">0:26</span></p>
+  </article>
+  <article>
+    <video controls preload="none" playsinline poster="videos/subtitulos.jpg" src="videos/subtitulos.mp4"
+           aria-label="Subtítulos palabra a palabra"></video>
+    <h3>Subtítulos palabra a palabra</h3>
+    <p>Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrigen escribiendo y el estilo se elige de una galería: karaoke, palabra a palabra o con «pop». <span class="dur">0:30</span></p>
+  </article>
+  <article>
+    <video controls preload="none" playsinline poster="videos/camara.jpg" src="videos/camara.mp4"
+           aria-label="Plantilla vertical con la cámara flotante"></video>
+    <h3>Plantilla vertical con la cámara flotante</h3>
+    <p>El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 3:4…), con sombra. Se arrastra a cualquier sitio en la vista previa y la rueda del ratón cambia su tamaño. <span class="dur">0:26</span></p>
+  </article>
+  <article>
+    <video controls preload="none" playsinline poster="videos/partidas.jpg" src="videos/partidas.mp4"
+           aria-label="Detectar partidas y una secuencia por partida"></video>
+    <h3>Detectar partidas y una secuencia por partida</h3>
+    <p>Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña. <span class="dur">0:24</span></p>
+  </article>
+  <article>
+    <video controls preload="none" playsinline poster="videos/kills.jpg" src="videos/kills.mp4"
+           aria-label="Recopilar tus kills"></video>
+    <h3>Recopilar tus kills</h3>
+    <p>Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer. <span class="dur">0:41</span></p>
+  </article>
+  <article>
+    <video controls preload="none" playsinline poster="videos/seleccion.jpg" src="videos/seleccion.mp4"
+           aria-label="Seleccionar, borrar y agrupar trozos"></video>
+    <h3>Seleccionar, borrar y agrupar trozos</h3>
+    <p>Como en cualquier editor: arrastrar para seleccionar varios trozos, Mayús + clic, borrar un tramo de todas las pistas desde la regla y agrupar trozos en un bloque que se mueve entero. <span class="dur">0:25</span></p>
+  </article>
+</div>
+</section>
+<footer>Actualizado el 01/11/2026</footer>
 <script>
 const slides = [...document.querySelectorAll(".stage img")];
 const dots = document.getElementById("dots");
@@ -106,8 +164,9 @@ function fromHash() {
 document.getElementById("prev").onclick = document.getElementById("sidePrev").onclick = () => show(current - 1);
 document.getElementById("next").onclick = document.getElementById("sideNext").onclick = () => show(current + 1);
 document.addEventListener("keydown", e => {
-  if (e.key === "ArrowRight" || e.key === "PageDown" || e.key === " ") { show(current + 1); e.preventDefault(); }
-  if (e.key === "ArrowLeft" || e.key === "PageUp") { show(current - 1); e.preventDefault(); }
+  if (e.target.closest && e.target.closest("video, #videos")) return;     // las flechas, para el vídeo
+  if (e.key === "ArrowRight") { show(current + 1); e.preventDefault(); }
+  if (e.key === "ArrowLeft") { show(current - 1); e.preventDefault(); }
 });
 let x0 = null;
 const stage = document.getElementById("stage");

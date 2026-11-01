@@ -1,0 +1,44 @@
+[
+ {
+  "video": "voz.mp4",
+  "portada": "voz.jpg",
+  "titulo": "Editar con la voz",
+  "texto": "Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti.",
+  "segundos": 26
+ },
+ {
+  "video": "subtitulos.mp4",
+  "portada": "subtitulos.jpg",
+  "titulo": "Subtítulos palabra a palabra",
+  "texto": "Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrigen escribiendo y el estilo se elige de una galería: karaoke, palabra a palabra o con «pop».",
+  "segundos": 30
+ },
+ {
+  "video": "camara.mp4",
+  "portada": "camara.jpg",
+  "titulo": "Plantilla vertical con la cámara flotante",
+  "texto": "El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 3:4…), con sombra. Se arrastra a cualquier sitio en la vista previa y la rueda del ratón cambia su tamaño.",
+  "segundos": 26
+ },
+ {
+  "video": "partidas.mp4",
+  "portada": "partidas.jpg",
+  "titulo": "Detectar partidas y una secuencia por partida",
+  "texto": "Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña.",
+  "segundos": 24
+ },
+ {
+  "video": "kills.mp4",
+  "portada": "kills.jpg",
+  "titulo": "Recopilar tus kills",
+  "texto": "Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer.",
+  "segundos": 41
+ },
+ {
+  "video": "seleccion.mp4",
+  "portada": "seleccion.jpg",
+  "titulo": "Seleccionar, borrar y agrupar trozos",
+  "texto": "Como en cualquier editor: arrastrar para seleccionar varios trozos, Mayús + clic, borrar un tramo de todas las pistas desde la regla y agrupar trozos en un bloque que se mueve entero.",
+  "segundos": 25
+ }
+]
