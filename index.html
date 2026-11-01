@@ -99,37 +99,37 @@ button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
 <h2>Míralo funcionando</h2>
 <p>Vídeos grabados usando NoxCut de verdad, sin montajes. Se vuelven a grabar cada vez que algo cambia. Los nombres de otros jugadores salen pixelados.</p>
 <div class="grid">
-  <article>
+  <article id="video-voz">
     <video controls preload="none" playsinline poster="videos/voz.jpg" src="videos/voz.mp4"
            aria-label="Editar con la voz"></video>
     <h3>Editar con la voz</h3>
     <p>Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti. <span class="dur">0:26</span></p>
   </article>
-  <article>
+  <article id="video-subtitulos">
     <video controls preload="none" playsinline poster="videos/subtitulos.jpg" src="videos/subtitulos.mp4"
            aria-label="Subtítulos palabra a palabra"></video>
     <h3>Subtítulos palabra a palabra</h3>
     <p>Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrigen escribiendo y el estilo se elige de una galería: karaoke, palabra a palabra o con «pop». <span class="dur">0:30</span></p>
   </article>
-  <article>
+  <article id="video-camara">
     <video controls preload="none" playsinline poster="videos/camara.jpg" src="videos/camara.mp4"
            aria-label="Plantilla vertical con la cámara flotante"></video>
     <h3>Plantilla vertical con la cámara flotante</h3>
     <p>El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 3:4…), con sombra. Se arrastra a cualquier sitio en la vista previa y la rueda del ratón cambia su tamaño. <span class="dur">0:26</span></p>
   </article>
-  <article>
+  <article id="video-partidas">
     <video controls preload="none" playsinline poster="videos/partidas.jpg" src="videos/partidas.mp4"
            aria-label="Detectar partidas y una secuencia por partida"></video>
     <h3>Detectar partidas y una secuencia por partida</h3>
     <p>Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña. <span class="dur">0:24</span></p>
   </article>
-  <article>
+  <article id="video-kills">
     <video controls preload="none" playsinline poster="videos/kills.jpg" src="videos/kills.mp4"
            aria-label="Recopilar tus kills"></video>
     <h3>Recopilar tus kills</h3>
     <p>Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer. <span class="dur">0:41</span></p>
   </article>
-  <article>
+  <article id="video-seleccion">
     <video controls preload="none" playsinline poster="videos/seleccion.jpg" src="videos/seleccion.mp4"
            aria-label="Seleccionar, borrar y agrupar trozos"></video>
     <h3>Seleccionar, borrar y agrupar trozos</h3>
@@ -154,11 +154,12 @@ function show(i) {
   [...dots.children].forEach((d, k) => d.setAttribute("aria-current", k === current));
   document.getElementById("count").textContent = (current + 1) + " / " + slides.length;
   const want = "#diapositiva-" + (current + 1);
-  if (location.hash !== want) history.replaceState(null, "", want);
+  if ((!location.hash || location.hash.startsWith("#diapositiva-")) && location.hash !== want)
+    history.replaceState(null, "", want);
 }
 function fromHash() {
   const m = /^#diapositiva-(\d+)$/.exec(location.hash);
-  show(m ? Number(m[1]) - 1 : 0);
+  show(m ? Number(m[1]) - 1 : current);          // con #video-… se queda en la diapositiva que estaba
 }
 document.getElementById("prev").onclick = document.getElementById("sidePrev").onclick = () => show(current - 1);
 document.getElementById("next").onclick = document.getElementById("sideNext").onclick = () => show(current + 1);
