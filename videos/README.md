@@ -43,6 +43,12 @@ Una sola ventana: NoxCut se abre con todos tus proyectos, cada uno con un fotogr
 
 Imágenes y GIF arrastrados desde el Explorador o el Finder a cualquier parte de la ventana. Con cientos, el buscador los encuentra mientras escribes; luego, al vídeo.
 
+### [La guía: cada parte, explicada en su sitio](https://garzanox.github.io/noxcut/#video-guia) (0:27)
+
+[![La guía: cada parte, explicada en su sitio](guia.jpg)](https://garzanox.github.io/noxcut/#video-guia)
+
+«📖 Guía»: elige un tema (por ejemplo, «Cómo hacer cortes») y NoxCut te lleva a esa parte, con una explicación junto a cada botón. O el recorrido completo, que se para y se sigue cuando quieras.
+
 ### [Seleccionar, borrar y agrupar trozos](https://garzanox.github.io/noxcut/#video-seleccion) (0:25)
 
 [![Seleccionar, borrar y agrupar trozos](seleccion.jpg)](https://garzanox.github.io/noxcut/#video-seleccion)
