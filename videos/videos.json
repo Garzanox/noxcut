@@ -32,7 +32,21 @@
   "portada": "kills.jpg",
   "titulo": "Recopilar tus kills",
   "texto": "Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer.",
-  "segundos": 39
+  "segundos": 40
+ },
+ {
+  "video": "proyectos.mp4",
+  "portada": "proyectos.jpg",
+  "titulo": "Tus proyectos al abrir",
+  "texto": "Una sola ventana: NoxCut se abre con todos tus proyectos, cada uno con un fotograma de su vídeo. Se buscan mientras escribes y, al elegir uno, la misma ventana pasa al editor.",
+  "segundos": 22
+ },
+ {
+  "video": "elementos.mp4",
+  "portada": "elementos.jpg",
+  "titulo": "Elementos: arrastrar y buscar",
+  "texto": "Imágenes y GIF arrastrados desde el Explorador o el Finder a cualquier parte de la ventana. Con cientos, el buscador los encuentra mientras escribes; luego, al vídeo.",
+  "segundos": 17
  },
  {
   "video": "seleccion.mp4",
