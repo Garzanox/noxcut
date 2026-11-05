@@ -25,11 +25,23 @@ El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 
 
 Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña.
 
-### [Recopilar tus kills](https://garzanox.github.io/noxcut/#video-kills) (0:39)
+### [Recopilar tus kills](https://garzanox.github.io/noxcut/#video-kills) (0:40)
 
 [![Recopilar tus kills](kills.jpg)](https://garzanox.github.io/noxcut/#video-kills)
 
 Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer.
+
+### [Tus proyectos al abrir](https://garzanox.github.io/noxcut/#video-proyectos) (0:22)
+
+[![Tus proyectos al abrir](proyectos.jpg)](https://garzanox.github.io/noxcut/#video-proyectos)
+
+Una sola ventana: NoxCut se abre con todos tus proyectos, cada uno con un fotograma de su vídeo. Se buscan mientras escribes y, al elegir uno, la misma ventana pasa al editor.
+
+### [Elementos: arrastrar y buscar](https://garzanox.github.io/noxcut/#video-elementos) (0:17)
+
+[![Elementos: arrastrar y buscar](elementos.jpg)](https://garzanox.github.io/noxcut/#video-elementos)
+
+Imágenes y GIF arrastrados desde el Explorador o el Finder a cualquier parte de la ventana. Con cientos, el buscador los encuentra mientras escribes; luego, al vídeo.
 
 ### [Seleccionar, borrar y agrupar trozos](https://garzanox.github.io/noxcut/#video-seleccion) (0:25)
 
