@@ -49,6 +49,13 @@
   "segundos": 17
  },
  {
+  "video": "guia.mp4",
+  "portada": "guia.jpg",
+  "titulo": "La guía: cada parte, explicada en su sitio",
+  "texto": "«📖 Guía»: elige un tema (por ejemplo, «Cómo hacer cortes») y NoxCut te lleva a esa parte, con una explicación junto a cada botón. O el recorrido completo, que se para y se sigue cuando quieras.",
+  "segundos": 27
+ },
+ {
   "video": "seleccion.mp4",
   "portada": "seleccion.jpg",
   "titulo": "Seleccionar, borrar y agrupar trozos",
