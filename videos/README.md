@@ -19,13 +19,13 @@ Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrig
 
 El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 3:4…), con sombra. Se arrastra a cualquier sitio en la vista previa y la rueda del ratón cambia su tamaño.
 
-### [Detectar partidas y una secuencia por partida](https://garzanox.github.io/noxcut/#video-partidas) (0:24)
+### [Detectar partidas y una secuencia por partida](https://garzanox.github.io/noxcut/#video-partidas) (0:22)
 
 [![Detectar partidas y una secuencia por partida](partidas.jpg)](https://garzanox.github.io/noxcut/#video-partidas)
 
 Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña.
 
-### [Recopilar tus kills](https://garzanox.github.io/noxcut/#video-kills) (0:39)
+### [Recopilar tus kills](https://garzanox.github.io/noxcut/#video-kills) (0:37)
 
 [![Recopilar tus kills](kills.jpg)](https://garzanox.github.io/noxcut/#video-kills)
 
