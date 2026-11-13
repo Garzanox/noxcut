@@ -27,6 +27,9 @@ header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; paddi
 header h1 { font-family: var(--display); font-size: 1.25rem; letter-spacing: .08em; color: var(--accent); margin: 0; }
 header p { margin: 0; color: var(--muted); font-size: .95rem; text-wrap: balance; }
 header a { color: var(--amber); font-weight: 600; }
+.langs { margin-left: auto; font-weight: 600; color: var(--muted); }
+.langs a, .langs b { padding: 0 4px; }
+.langs b { color: var(--ink); }
 #videos { max-width: 1240px; margin: 0 auto; padding: 32px 20px 56px; }
 #videos h2 { font-family: var(--display); color: var(--amber); font-size: 1.6rem; margin: 0 0 6px; }
 #videos > p { color: var(--muted); margin: 0 0 22px; max-width: 70ch; }
@@ -64,12 +67,13 @@ button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
   <h1>NOXCUT</h1>
   <p>Editor de vídeo en horizontal o en vertical, con subtítulos palabra a palabra y ayudas para shorts, hecho por un streamer de shooters. ¿Qué te parece?
   <a href="#videos">Míralo funcionando ↓</a></p>
+  <span class="langs"><b>ES</b> · <a href="en/" hreflang="en" lang="en">EN</a></span>
 </header>
 <main>
   <div class="stage" id="stage">
     <img src="diapositivas/01.jpg?v=409e8132f2" alt="Diapositiva 1: NOXCUT De tu directo a YouTube y TikTok, sin pasarte horas editando Editor de vídeo para creadores, en horizontal o en vertical: subtítulos palabra a palabra, m" class="on">
     <img src="diapositivas/02.jpg?v=032e63c3a7" alt="Diapositiva 2: EL PROBLEMA Sacar clips de un directo lleva horas Sin NoxCut ●Buscar cada partida en un directo de tres horas. ●Volver a ver horas de directo para encontrar una">
-    <img src="diapositivas/03.jpg?v=5e2153ab51" alt="Diapositiva 3: EN 2 DIAPOSITIVAS · 1/2 Todo lo que hace Voz Le dices lo que quieres y lo hace delante de ti. Subtítulos Palabra a palabra, karaoke o «pop», con 14 plantillas (">
+    <img src="diapositivas/03.jpg?v=e8cd57a91f" alt="Diapositiva 3: EN 2 DIAPOSITIVAS · 1/2 Todo lo que hace Voz Le dices lo que quieres y lo hace delante de ti. Subtítulos Palabra a palabra, karaoke o «pop», con 14 plantillas (">
     <img src="diapositivas/04.jpg?v=2f30687ad5" alt="Diapositiva 4: EN 2 DIAPOSITIVAS · 2/2 Todo lo que hace (y más) Proyectos Al abrir, todos tus proyectos con su miniatura. Comentarios Manda ideas o fallos con capturas y mira ">
     <img src="diapositivas/05.jpg?v=6bf8a214e7" alt="Diapositiva 5: INSTRUCCIONES POR VOZ Dile lo que quieres y míralo hacerlo ●«Quédate con las partidas 2 y 3, pon cada una en su secuencia, hazles los cortes y pásalo a vertical">
     <img src="diapositivas/06.jpg?v=77c921d4ff" alt="Diapositiva 6: SUBTÍTULOS Subtítulos palabra a palabra, en tu ordenador ●Se generan solos, cada palabra con su tiempo; se corrigen escribiendo en la tabla. ●Cuadrados con la v">
@@ -81,22 +85,23 @@ button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
     <img src="diapositivas/12.jpg?v=cb9e07eb66" alt="Diapositiva 12: EFECTOS Transiciones, filtros, sonidos y animaciones ●Una pestaña con todo, cada efecto con su miniatura en movimiento y un buscador. ●16 transiciones: fundido ">
     <img src="diapositivas/13.jpg?v=4793ed9332" alt="Diapositiva 13: INTRO Y FINAL Tu portada y tu «¡Sígueme!», con un clic ●Portada con el título sobre el primer fotograma, o tu propia intro. ●Final con «¡Sígueme!», tus redes y ">
     <img src="diapositivas/14.jpg?v=b98c49bac7" alt="Diapositiva 14: SEPARAR VOCES Cada persona, en su pista ●Reconoce a las personas que hablan, aunque vayan en una sola pista de audio. ●Los subtítulos de cada una en su pista, c">
-    <img src="diapositivas/15.jpg?v=96aa6cb533" alt="Diapositiva 15: MONTAJE Editar como en un editor de vídeo ●Cortar en el cabezal (Ctrl+B), unión magnética e imán. ●Arrastrar para seleccionar varios trozos; Mayús + clic. ●Bloq">
-    <img src="diapositivas/16.jpg?v=7d70aba330" alt="Diapositiva 16: ELEMENTOS Imágenes, GIF, vídeos y música ●Arrástralos desde el Explorador o el Finder a cualquier parte de la ventana. ●Cientos de imágenes: buscador y una pest">
-    <img src="diapositivas/17.jpg?v=3bfa9dec62" alt="Diapositiva 17: PROYECTOS Todos tus proyectos, nada más abrir ●Una sola ventana: se abre con tus proyectos y pasa al editor al elegir uno. ●Cada uno con un fotograma de su víde">
-    <img src="diapositivas/18.jpg?v=8a0296e0b4" alt="Diapositiva 18: GUÍA INTERACTIVA Cada parte, explicada en su sitio ●El botón «?» de arriba: todos los temas por partes, con buscador. ●Eliges uno (p. ej. «Cómo hacer cortes») y">
-    <img src="diapositivas/19.jpg?v=c65658a5f4" alt="Diapositiva 19: COMENTARIOS Tus ideas y fallos, directos a Garzanox ●El botón «Comentarios»: una idea o un fallo sin salir del editor. ●Con capturas de NoxCut en las que marcas">
-    <img src="diapositivas/20.jpg?v=b8b9cfa29c" alt="Diapositiva 20: EXPORTAR 9 formatos, en 1080p, 2K o 4K MP4 (H.264) El de siempre: redes, móviles y cualquier reproductor MP4 (H.265) Misma calidad, archivo más pequeño MOV (H.2">
-    <img src="diapositivas/21.jpg?v=08c8a7bb40" alt="Diapositiva 21: WINDOWS Y MAC En Windows y en Mac Captura real en el Mac donde se edita cada día Acción Mac Deshacer / rehacer ⌘Z / ⌘⇧Z Cortar en el cabezal ⌘B Juntar palabras ">
-    <img src="diapositivas/22.jpg?v=376800bfad" alt="Diapositiva 22: ACTUALIZACIONES Cada versión nueva, con un clic Al abrir NoxCut, si hay una versión nueva (Windows) Al abrir la versión nueva: lo que trae ●Al abrir, NoxCut mir">
-    <img src="diapositivas/23.jpg?v=f922026b1b" alt="Diapositiva 23: A MEDIDA Hecho con una editora que lo usa cada día Pidió: Poder arrastrar imágenes y vídeos desde el explorador, como en cualquier editor. → Se sueltan en cualq">
-    <img src="diapositivas/24.jpg?v=81cbb9fd53" alt="Diapositiva 24: ANTES Y DESPUÉS Un lavado de cara Antes Ahora El reproductor antes El reproductor ahora ●Botones agrupados por lo que hacen, con iconos en vez de emojis; «Expor">
-    <img src="diapositivas/25.jpg?v=29270023ee" alt="Diapositiva 25: LICENCIAS Cada ordenador, su propia clave Lo que ve quien instala NoxCut la primera vez 1 Instalas NoxCut La primera vez te enseña el código único de tu ordenad">
-    <img src="diapositivas/26.jpg?v=1d9a79dcde" alt="Diapositiva 26: DERECHOS Una obra registrada y protegida © © 2026 Garzanox · Todos los derechos reservados Registrado en Safe Creative Nº 2611067566781 · 06/11/2026 Autor Garza">
-    <img src="diapositivas/27.jpg?v=e9b3e7cda5" alt="Diapositiva 27: CÓMO SE HA HECHO 13 días, 154 avances 30/10 · 14:07 Primera exportación 30/10 · 16:27 Estilos y modo pop 30/10 · 21:02 Montaje 31/10 · 11:30 Generar cortes 31/1">
-    <img src="diapositivas/28.jpg?v=5fad978f96" alt="Diapositiva 28: RESULTADOS En números 13 días del prototipo a editor de vídeo (30/10 a 13/11/2026) 154 avances en la cronología, cada uno probado 13 s para encontrar las 11 par">
-    <img src="diapositivas/29.jpg?v=8c0908d979" alt="Diapositiva 29: LA PRÓXIMA VERSIÓN En camino (desde el 13/11) NoxCut 2.0, también en inglés Todo el programa en inglés: menús, ventanas, guía, novedades, efectos y stickers. Y ">
-    <img src="diapositivas/30.jpg?v=3060b18d44" alt="Diapositiva 30: MÁS ADELANTE Lo que viene Montaje al ritmo La recopilación de kills cortada al ritmo de una canción, con sus subtítulos. Versión para Linux Lo mismo que en Mac ">
+    <img src="diapositivas/15.jpg?v=6deaaf3e75" alt="Diapositiva 15: IDIOMAS En castellano o en inglés ●Al instalar eliges el idioma: todo NoxCut en castellano o en inglés. ●Se cambia al momento en «Opciones», sin cerrar nada ni ">
+    <img src="diapositivas/16.jpg?v=96aa6cb533" alt="Diapositiva 16: MONTAJE Editar como en un editor de vídeo ●Cortar en el cabezal (Ctrl+B), unión magnética e imán. ●Arrastrar para seleccionar varios trozos; Mayús + clic. ●Bloq">
+    <img src="diapositivas/17.jpg?v=7d70aba330" alt="Diapositiva 17: ELEMENTOS Imágenes, GIF, vídeos y música ●Arrástralos desde el Explorador o el Finder a cualquier parte de la ventana. ●Cientos de imágenes: buscador y una pest">
+    <img src="diapositivas/18.jpg?v=3bfa9dec62" alt="Diapositiva 18: PROYECTOS Todos tus proyectos, nada más abrir ●Una sola ventana: se abre con tus proyectos y pasa al editor al elegir uno. ●Cada uno con un fotograma de su víde">
+    <img src="diapositivas/19.jpg?v=8a0296e0b4" alt="Diapositiva 19: GUÍA INTERACTIVA Cada parte, explicada en su sitio ●El botón «?» de arriba: todos los temas por partes, con buscador. ●Eliges uno (p. ej. «Cómo hacer cortes») y">
+    <img src="diapositivas/20.jpg?v=c65658a5f4" alt="Diapositiva 20: COMENTARIOS Tus ideas y fallos, directos a Garzanox ●El botón «Comentarios»: una idea o un fallo sin salir del editor. ●Con capturas de NoxCut en las que marcas">
+    <img src="diapositivas/21.jpg?v=b8b9cfa29c" alt="Diapositiva 21: EXPORTAR 9 formatos, en 1080p, 2K o 4K MP4 (H.264) El de siempre: redes, móviles y cualquier reproductor MP4 (H.265) Misma calidad, archivo más pequeño MOV (H.2">
+    <img src="diapositivas/22.jpg?v=08c8a7bb40" alt="Diapositiva 22: WINDOWS Y MAC En Windows y en Mac Captura real en el Mac donde se edita cada día Acción Mac Deshacer / rehacer ⌘Z / ⌘⇧Z Cortar en el cabezal ⌘B Juntar palabras ">
+    <img src="diapositivas/23.jpg?v=376800bfad" alt="Diapositiva 23: ACTUALIZACIONES Cada versión nueva, con un clic Al abrir NoxCut, si hay una versión nueva (Windows) Al abrir la versión nueva: lo que trae ●Al abrir, NoxCut mir">
+    <img src="diapositivas/24.jpg?v=f922026b1b" alt="Diapositiva 24: A MEDIDA Hecho con una editora que lo usa cada día Pidió: Poder arrastrar imágenes y vídeos desde el explorador, como en cualquier editor. → Se sueltan en cualq">
+    <img src="diapositivas/25.jpg?v=81cbb9fd53" alt="Diapositiva 25: ANTES Y DESPUÉS Un lavado de cara Antes Ahora El reproductor antes El reproductor ahora ●Botones agrupados por lo que hacen, con iconos en vez de emojis; «Expor">
+    <img src="diapositivas/26.jpg?v=29270023ee" alt="Diapositiva 26: LICENCIAS Cada ordenador, su propia clave Lo que ve quien instala NoxCut la primera vez 1 Instalas NoxCut La primera vez te enseña el código único de tu ordenad">
+    <img src="diapositivas/27.jpg?v=1d9a79dcde" alt="Diapositiva 27: DERECHOS Una obra registrada y protegida © © 2026 Garzanox · Todos los derechos reservados Registrado en Safe Creative Nº 2611067566781 · 06/11/2026 Autor Garza">
+    <img src="diapositivas/28.jpg?v=4d230534d4" alt="Diapositiva 28: CÓMO SE HA HECHO 13 días, 159 avances 30/10 · 14:07 Primera exportación 30/10 · 16:27 Estilos y modo pop 30/10 · 21:02 Montaje 31/10 · 11:30 Generar cortes 31/1">
+    <img src="diapositivas/29.jpg?v=6f8011f706" alt="Diapositiva 29: RESULTADOS En números 13 días del prototipo a editor de vídeo (30/10 a 13/11/2026) 159 avances en la cronología, cada uno probado 13 s para encontrar las 11 par">
+    <img src="diapositivas/30.jpg?v=510e7cbbe3" alt="Diapositiva 30: LA PRÓXIMA VERSIÓN En camino (desde el 13/11) Descripciones y hashtags Al exportar, el texto para TikTok, Reels, Shorts y YouTube, listo para copiar. Gráficas i">
+    <img src="diapositivas/31.jpg?v=684cd0fe24" alt="Diapositiva 31: MÁS ADELANTE Lo que viene Montaje al ritmo La recopilación de kills cortada al ritmo de una canción, con sus subtítulos. Versión para Linux Lo mismo que en Mac ">
     <button class="side prev" id="sidePrev" aria-label="Diapositiva anterior"></button>
     <button class="side next" id="sideNext" aria-label="Diapositiva siguiente"></button>
   </div>

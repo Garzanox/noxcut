@@ -1,0 +1,65 @@
+[
+ {
+  "video": "voz.mp4",
+  "portada": "voz.jpg",
+  "titulo": "Editing by voice",
+  "texto": "You tell it like you'd tell a person: NoxCut shows what it understood, step by step, and does it in front of you.",
+  "segundos": 26
+ },
+ {
+  "video": "subtitulos.mp4",
+  "portada": "subtitulos.jpg",
+  "titulo": "Word-by-word subtitles",
+  "texto": "Generated on your computer (offline), each word with its timing. Corrected by typing, and the style is chosen from a gallery: karaoke, word by word or with “pop”.",
+  "segundos": 30
+ },
+ {
+  "video": "camara.mp4",
+  "portada": "camara.jpg",
+  "titulo": "Vertical template with the floating camera",
+  "texto": "The game full screen and your camera on top, round (or square, 4:3, 3:4…), with a shadow. Drag it anywhere in the preview and the mouse wheel changes its size.",
+  "segundos": 26
+ },
+ {
+  "video": "partidas.mp4",
+  "portada": "partidas.jpg",
+  "titulo": "Finding matches and one sequence per match",
+  "texto": "A 2 h 40 min stream: NoxCut finds the 11 matches and puts each one in its own tab.",
+  "segundos": 24
+ },
+ {
+  "video": "kills.mp4",
+  "portada": "kills.jpg",
+  "titulo": "Collecting your kills",
+  "texto": "Without typing anything: NoxCut recognises the player from their own deaths, counts the kills in each round and keeps the ones you choose (doubles, triples, aces…). Before changing anything, it says what it's going to do.",
+  "segundos": 41
+ },
+ {
+  "video": "proyectos.mp4",
+  "portada": "proyectos.jpg",
+  "titulo": "Your projects when it opens",
+  "texto": "A single window: NoxCut opens with all your projects, each with a frame from its video. Search as you type and, when you choose one, the same window switches to the editor.",
+  "segundos": 23
+ },
+ {
+  "video": "elementos.mp4",
+  "portada": "elementos.jpg",
+  "titulo": "Media: drag and search",
+  "texto": "Images and GIFs dragged from File Explorer or the Finder to anywhere in the window. With hundreds, the search box finds them as you type; then, into the video.",
+  "segundos": 17
+ },
+ {
+  "video": "guia.mp4",
+  "portada": "guia.jpg",
+  "titulo": "The guide: every part, explained in place",
+  "texto": "“📖 Guide”: choose a topic (for example, “How to make cuts”) and NoxCut takes you to that part, with an explanation next to each button. Or the full tour, which you can stop and continue whenever you like.",
+  "segundos": 26
+ },
+ {
+  "video": "seleccion.mp4",
+  "portada": "seleccion.jpg",
+  "titulo": "Selecting, deleting and grouping clips",
+  "texto": "Like in any editor: drag to select several clips, Shift + click, delete a section from every track using the ruler and group clips into a block that moves as one.",
+  "segundos": 25
+ }
+]
