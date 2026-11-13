@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NoxCut, project presentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Nunito+Sans:wght@400;600&display=swap">
+<style>
+:root {
+  /* Un solo mundo visual, el de las diapositivas: fondo noche, violeta NoxCut y ámbar de los títulos. */
+  --bg: #0f0f17;
+  --panel: #171724;
+  --ink: #ecebf5;
+  --muted: #9a98b3;
+  --accent: #8b7bff;
+  --amber: #f5a524;
+  --display: "Sora", "Segoe UI", system-ui, sans-serif;
+  --body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); }
+.deck { min-height: 100vh; display: flex; flex-direction: column; }
+header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 14px 20px 6px; }
+header h1 { font-family: var(--display); font-size: 1.25rem; letter-spacing: .08em; color: var(--accent); margin: 0; }
+header p { margin: 0; color: var(--muted); font-size: .95rem; text-wrap: balance; }
+header a { color: var(--amber); font-weight: 600; }
+.langs { margin-left: auto; font-weight: 600; color: var(--muted); }
+.langs a, .langs b { padding: 0 4px; }
+.langs b { color: var(--ink); }
+#videos { max-width: 1240px; margin: 0 auto; padding: 32px 20px 56px; }
+#videos h2 { font-family: var(--display); color: var(--amber); font-size: 1.6rem; margin: 0 0 6px; }
+#videos > p { color: var(--muted); margin: 0 0 22px; max-width: 70ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 22px; }
+.grid article { background: var(--panel); border: 1px solid #2c2b42; border-radius: 12px; overflow: hidden; }
+.grid video { display: block; width: 100%; aspect-ratio: 16 / 10; background: #000; }
+.grid h3 { font-family: var(--display); font-size: 1.05rem; margin: 14px 16px 6px; }
+.grid p { color: var(--muted); margin: 0 16px 16px; line-height: 1.45; font-size: .95rem; }
+.grid .dur { color: var(--accent); font-variant-numeric: tabular-nums; }
+footer { color: var(--muted); text-align: center; font-size: .85rem; padding: 0 20px 28px; }
+main { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 8px 16px; }
+.stage { position: relative; width: min(100%, calc((100vh - 150px) * 16 / 9)); aspect-ratio: 16 / 9; }
+.stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 10px;
+  background: var(--panel); box-shadow: 0 10px 40px rgba(0, 0, 0, .45); opacity: 0; transition: opacity .25s; }
+.stage img.on { opacity: 1; }
+.side { position: absolute; top: 0; bottom: 0; width: 30%; background: none; border: 0; cursor: pointer; }
+.side.prev { left: 0; }
+.side.next { right: 0; }
+nav { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; padding: 8px 16px 16px; }
+button.ctl { font: 600 .95rem var(--body); color: var(--ink); background: var(--panel); border: 1px solid #2c2b42;
+  border-radius: 8px; padding: 8px 14px; cursor: pointer; }
+button.ctl:hover { border-color: var(--accent); }
+button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.count { font-variant-numeric: tabular-nums; color: var(--muted); min-width: 4.5em; text-align: center; }
+.dots { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.dots button { width: 10px; height: 10px; border-radius: 50%; border: 0; padding: 0; background: #34334d; cursor: pointer; }
+.dots button[aria-current="true"] { background: var(--amber); }
+@media (prefers-reduced-motion: reduce) { .stage img { transition: none; } }
+@media (max-width: 500px) { header p { font-size: .85rem; } .dots { display: none; } }
+</style>
+</head>
+<body>
+<div class="deck">
+<header>
+  <h1>NOXCUT</h1>
+  <p>A video editor, horizontal or vertical, with word-by-word subtitles and helpers for shorts, made by a shooter streamer. What do you think?
+  <a href="#videos">See it in action ↓</a></p>
+  <span class="langs"><a href="../" hreflang="es" lang="es">ES</a> · <b>EN</b></span>
+</header>
+<main>
+  <div class="stage" id="stage">
+    <img src="diapositivas/01.jpg?v=7d937d3c62" alt="Slide 1: NOXCUT From your stream to YouTube and TikTok, without hours of editing A video editor for creators, horizontal or vertical: word-by-word subtitles, editing, ef" class="on">
+    <img src="diapositivas/02.jpg?v=4f15d62944" alt="Slide 2: THE PROBLEM Getting clips out of a stream takes hours Without NoxCut ● Finding every match in a three-hour stream. ● Rewatching hours of stream to find one sent">
+    <img src="diapositivas/03.jpg?v=963ee15d82" alt="Slide 3: 2 SLIDES · 1/2 Everything it does Voice You tell it what you want and it does it in front of you. Subtitles Word by word, karaoke or “pop”, with 14 templates (s">
+    <img src="diapositivas/04.jpg?v=19f40aa37a" alt="Slide 4: 2 SLIDES · 2/2 Everything it does (and more) Projects When it opens, all your projects with their thumbnails. Feedback Send ideas or bugs with screenshots and f">
+    <img src="diapositivas/05.jpg?v=c17a8ae283" alt="Slide 5: VOICE COMMANDS Tell it what you want and watch it happen ● “Keep matches 2 and 3, put each one in its own sequence, make the cuts and make it vertical.” ● It sh">
+    <img src="diapositivas/06.jpg?v=178511519b" alt="Slide 6: SUBTITLES Word-by-word subtitles, on your computer ● Generated automatically, each word with its timing; corrected by typing in the table. ● Synced to the real ">
+    <img src="diapositivas/07.jpg?v=63284e3332" alt="Slide 7: VERTICAL TEMPLATE From horizontal to vertical, with your camera wherever you like ● The camera is detected automatically. ● “Gaming” (camera on top, game below)">
+    <img src="diapositivas/08.jpg?v=445753f953" alt="Slide 8: SHOOTER STREAMS Every match, found and separated ● Finds the 11 matches in a 2 h 40 min stream in about 13 seconds. ● What&#x27;s between matches is marked: nothing ">
+    <img src="diapositivas/09.jpg?v=8cd356ce6a" alt="Slide 9: SEARCH WHAT WAS SAID That sentence from the stream, in seconds ● Type what you said and the video jumps to that moment, without playing it. ● Without generating">
+    <img src="diapositivas/10.jpg?v=dccf02f42f" alt="Slide 10: COLLECT KILLS Your best rounds, without looking for them ● Reads the kill feed: skins don&#x27;t affect it. ● Recognises you by itself, from your own deaths (or by y">
+    <img src="diapositivas/11.jpg?v=1c989b9590" alt="Slide 11: HIGHLIGHTS The laughter and shouting in the stream, found by itself ● Listens to each audio track (the OBS mic separately) and finds the laughter and when voice">
+    <img src="diapositivas/12.jpg?v=94b167f9d0" alt="Slide 12: EFFECTS Transitions, filters, sounds and animations ● One tab with everything, each effect with a moving thumbnail, plus a search box. ● 16 transitions: crossfa">
+    <img src="diapositivas/13.jpg?v=2faf1279e6" alt="Slide 13: INTRO AND OUTRO Your cover and your “Follow me!”, in one click ● A cover with the title over the first frame, or your own intro. ● An outro with “Follow me!”, y">
+    <img src="diapositivas/14.jpg?v=87226bf89e" alt="Slide 14: SEPARATE VOICES Each person, on their own track ● Recognises the people speaking, even on a single audio track. ● Each one&#x27;s subtitles on their own track, in th">
+    <img src="diapositivas/15.jpg?v=7c750d57a6" alt="Slide 15: LANGUAGES In Spanish or in English ● You choose the language when installing: all of NoxCut in Spanish or in English. ● It switches instantly in “Options”, with">
+    <img src="diapositivas/16.jpg?v=684e7e6952" alt="Slide 16: EDITING Edit like in a video editor ● Cut at the playhead (Ctrl+B), magnetic snapping and snapping to words. ● Drag to select several clips; Shift + click. ● Bl">
+    <img src="diapositivas/17.jpg?v=f39339d4af" alt="Slide 17: MEDIA Images, GIFs, videos and music ● Drag them from File Explorer or the Finder to anywhere in the window. ● Hundreds of images: a search box and one tab per ">
+    <img src="diapositivas/18.jpg?v=1dec903b15" alt="Slide 18: PROJECTS All your projects, as soon as it opens ● A single window: it opens with your projects and switches to the editor when you choose one. ● Each one with a">
+    <img src="diapositivas/19.jpg?v=b9ab8f8a9b" alt="Slide 19: INTERACTIVE GUIDE Every part, explained in place ● The “?” button at the top: every topic by section, with a search box. ● Choose one (e.g. “How to make cuts”) ">
+    <img src="diapositivas/20.jpg?v=b752ab670a" alt="Slide 20: FEEDBACK Your ideas and bugs, straight to Garzanox ● The “Feedback” button: an idea or a bug without leaving the editor. ● With NoxCut screenshots where you mar">
+    <img src="diapositivas/21.jpg?v=283354401d" alt="Slide 21: EXPORT 9 formats, in 1080p, 2K or 4K MP4 (H.264) The standard: social media, phones and any player MP4 (H.265) Same quality, smaller file MOV (H.264) For Mac an">
+    <img src="diapositivas/22.jpg?v=9a92581653" alt="Slide 22: WINDOWS AND MAC On Windows and on Mac A real screenshot on the Mac used for editing every day Acción Mac Deshacer / rehacer ⌘Z / ⌘⇧Z Cortar en el cabezal ⌘B Jun">
+    <img src="diapositivas/23.jpg?v=d3f9174ad6" alt="Slide 23: UPDATES Every new version, in one click When NoxCut opens, if there&#x27;s a new version (Windows) When the new version opens: what&#x27;s new ● When it opens, NoxCut che">
+    <img src="diapositivas/24.jpg?v=512b57edde" alt="Slide 24: MADE TO MEASURE Built with an editor who uses it every day She asked: To drag images and videos from File Explorer, like in any editor. → Drop them anywhere in ">
+    <img src="diapositivas/25.jpg?v=ee67b7f4e0" alt="Slide 25: BEFORE AND AFTER A facelift Before Now The player before The player now ● Buttons grouped by what they do, with icons instead of emojis; “Export” stands out. ● ">
+    <img src="diapositivas/26.jpg?v=38079cb89b" alt="Slide 26: LICENCES Each computer, its own key What someone sees the first time they install NoxCut 1 You install NoxCut The first time, it shows you your computer&#x27;s uniqu">
+    <img src="diapositivas/27.jpg?v=37909ee61f" alt="Slide 27: RIGHTS A registered, protected work © © 2026 Garzanox · All rights reserved Registered with Safe Creative Nº 2611067566781 · 06/11/2026 Author Garzanox Licence ">
+    <img src="diapositivas/28.jpg?v=b1f39b141f" alt="Slide 28: HOW IT WAS MADE 13 days, 159 milestones 30/10 · 14:07 First export 30/10 · 16:27 Styles and pop mode 30/10 · 21:02 Editing 31/10 · 11:30 Generate cuts 31/10 · 1">
+    <img src="diapositivas/29.jpg?v=847ddeb714" alt="Slide 29: RESULTS In numbers 13 days from prototype to video editor (30/10 to 13/11/2026) 159 milestones in the timeline, each one tested 13 s to find the 11 matches in a">
+    <img src="diapositivas/30.jpg?v=63801b49ec" alt="Slide 30: THE NEXT VERSION On the way (since 13/11) Descriptions and hashtags When exporting, the text for TikTok, Reels, Shorts and YouTube, ready to copy. Integrated gr">
+    <img src="diapositivas/31.jpg?v=6cce6bfa2e" alt="Slide 31: FURTHER AHEAD What&#x27;s coming Editing to the beat The kill compilation cut to the beat of a song, with its subtitles. Linux version The same as on Mac and Windows">
+    <button class="side prev" id="sidePrev" aria-label="Previous slide"></button>
+    <button class="side next" id="sideNext" aria-label="Next slide"></button>
+  </div>
+</main>
+<nav>
+  <button class="ctl" id="prev">← Previous</button>
+  <span class="count" id="count" aria-live="polite"></span>
+  <button class="ctl" id="next">Next →</button>
+  <div class="dots" id="dots"></div>
+  <button class="ctl" id="full">Full screen</button>
+</nav>
+</div>
+<section id="videos">
+<h2>See it in action</h2>
+<p>Videos recorded using NoxCut for real, no staging. They're recorded again whenever something changes.</p>
+<div class="grid">
+  <article id="video-voz">
+    <video controls preload="none" playsinline poster="../videos/en/voz.jpg?v=cc569c8716" src="../videos/en/voz.mp4?v=a13cde7d16"
+           aria-label="Editing by voice"></video>
+    <h3>Editing by voice</h3>
+    <p>You tell it like you&#x27;d tell a person: NoxCut shows what it understood, step by step, and does it in front of you. <span class="dur">0:26</span></p>
+  </article>
+  <article id="video-subtitulos">
+    <video controls preload="none" playsinline poster="../videos/en/subtitulos.jpg?v=a9fed362c0" src="../videos/en/subtitulos.mp4?v=266bf0768b"
+           aria-label="Word-by-word subtitles"></video>
+    <h3>Word-by-word subtitles</h3>
+    <p>Generated on your computer (offline), each word with its timing. Corrected by typing, and the style is chosen from a gallery: karaoke, word by word or with “pop”. <span class="dur">0:30</span></p>
+  </article>
+  <article id="video-camara">
+    <video controls preload="none" playsinline poster="../videos/en/camara.jpg?v=544bd16026" src="../videos/en/camara.mp4?v=b744545aaa"
+           aria-label="Vertical template with the floating camera"></video>
+    <h3>Vertical template with the floating camera</h3>
+    <p>The game full screen and your camera on top, round (or square, 4:3, 3:4…), with a shadow. Drag it anywhere in the preview and the mouse wheel changes its size. <span class="dur">0:26</span></p>
+  </article>
+  <article id="video-partidas">
+    <video controls preload="none" playsinline poster="../videos/en/partidas.jpg?v=705cbb1f86" src="../videos/en/partidas.mp4?v=dc88b0eb43"
+           aria-label="Finding matches and one sequence per match"></video>
+    <h3>Finding matches and one sequence per match</h3>
+    <p>A 2 h 40 min stream: NoxCut finds the 11 matches and puts each one in its own tab. <span class="dur">0:24</span></p>
+  </article>
+  <article id="video-kills">
+    <video controls preload="none" playsinline poster="../videos/en/kills.jpg?v=6266a76a30" src="../videos/en/kills.mp4?v=6d5264f182"
+           aria-label="Collecting your kills"></video>
+    <h3>Collecting your kills</h3>
+    <p>Without typing anything: NoxCut recognises the player from their own deaths, counts the kills in each round and keeps the ones you choose (doubles, triples, aces…). Before changing anything, it says what it&#x27;s going to do. <span class="dur">0:41</span></p>
+  </article>
+  <article id="video-proyectos">
+    <video controls preload="none" playsinline poster="../videos/en/proyectos.jpg?v=dd000141b9" src="../videos/en/proyectos.mp4?v=2055427ec9"
+           aria-label="Your projects when it opens"></video>
+    <h3>Your projects when it opens</h3>
+    <p>A single window: NoxCut opens with all your projects, each with a frame from its video. Search as you type and, when you choose one, the same window switches to the editor. <span class="dur">0:23</span></p>
+  </article>
+  <article id="video-elementos">
+    <video controls preload="none" playsinline poster="../videos/en/elementos.jpg?v=b5e652713f" src="../videos/en/elementos.mp4?v=5d96c3587c"
+           aria-label="Media: drag and search"></video>
+    <h3>Media: drag and search</h3>
+    <p>Images and GIFs dragged from File Explorer or the Finder to anywhere in the window. With hundreds, the search box finds them as you type; then, into the video. <span class="dur">0:17</span></p>
+  </article>
+  <article id="video-guia">
+    <video controls preload="none" playsinline poster="../videos/en/guia.jpg?v=dad2503695" src="../videos/en/guia.mp4?v=e416892b45"
+           aria-label="The guide: every part, explained in place"></video>
+    <h3>The guide: every part, explained in place</h3>
+    <p>“📖 Guide”: choose a topic (for example, “How to make cuts”) and NoxCut takes you to that part, with an explanation next to each button. Or the full tour, which you can stop and continue whenever you like. <span class="dur">0:26</span></p>
+  </article>
+  <article id="video-seleccion">
+    <video controls preload="none" playsinline poster="../videos/en/seleccion.jpg?v=2150dabfd3" src="../videos/en/seleccion.mp4?v=8e1b22c184"
+           aria-label="Selecting, deleting and grouping clips"></video>
+    <h3>Selecting, deleting and grouping clips</h3>
+    <p>Like in any editor: drag to select several clips, Shift + click, delete a section from every track using the ruler and group clips into a block that moves as one. <span class="dur">0:25</span></p>
+  </article>
+</div>
+</section>
+<footer>Updated on 13/11/2026</footer>
+<script>
+const slides = [...document.querySelectorAll(".stage img")];
+const dots = document.getElementById("dots");
+slides.forEach((_, i) => {
+  const b = document.createElement("button");
+  b.setAttribute("aria-label", "Go to slide " + (i + 1));
+  b.addEventListener("click", () => show(i));
+  dots.appendChild(b);
+});
+let current = 0;
+function show(i) {
+  current = Math.max(0, Math.min(slides.length - 1, i));
+  slides.forEach((s, k) => s.classList.toggle("on", k === current));
+  [...dots.children].forEach((d, k) => d.setAttribute("aria-current", k === current));
+  document.getElementById("count").textContent = (current + 1) + " / " + slides.length;
+  const want = "#slide-" + (current + 1);
+  if ((!location.hash || location.hash.startsWith("#slide-")) && location.hash !== want)
+    history.replaceState(null, "", want);
+}
+function fromHash() {
+  const m = /^#slide-(\d+)$/.exec(location.hash);
+  show(m ? Number(m[1]) - 1 : current);          // con #video-… se queda en la diapositiva que estaba
+}
+document.getElementById("prev").onclick = document.getElementById("sidePrev").onclick = () => show(current - 1);
+document.getElementById("next").onclick = document.getElementById("sideNext").onclick = () => show(current + 1);
+document.addEventListener("keydown", e => {
+  if (e.target.closest && e.target.closest("video, #videos")) return;     // las flechas, para el vídeo
+  if (e.key === "ArrowRight") { show(current + 1); e.preventDefault(); }
+  if (e.key === "ArrowLeft") { show(current - 1); e.preventDefault(); }
+});
+let x0 = null;
+const stage = document.getElementById("stage");
+stage.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive: true });
+stage.addEventListener("touchend", e => {
+  if (x0 === null) return;
+  const dx = e.changedTouches[0].clientX - x0;
+  if (Math.abs(dx) > 40) show(current + (dx < 0 ? 1 : -1));
+  x0 = null;
+});
+document.getElementById("full").onclick = async () => {
+  try {
+    if (document.fullscreenElement) await document.exitFullscreen();
+    else await stage.requestFullscreen();
+  } catch (err) {
+    document.getElementById("full").textContent = "Full screen not available";
+  }
+};
+window.addEventListener("hashchange", fromHash);
+fromHash();
+</script>
+</body>
+</html>
