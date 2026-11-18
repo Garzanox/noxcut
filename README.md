@@ -1,6 +1,8 @@
 # NoxCut · presentación del proyecto
 
-**Ver la presentación y los vídeos:** https://garzanox.github.io/noxcut/
+**La web de NoxCut (funciones, vídeos, descargas y contacto):** https://garzanox.github.io/noxcut/
+
+**La presentación del proyecto:** https://garzanox.github.io/noxcut/presentacion/
 
 NoxCut es un editor de vídeo para creadores, en horizontal o en vertical, con subtítulos palabra a palabra y
 ayudas para sacar shorts (TikTok, Reels, Shorts) de los directos de videojuegos. Funciona entero en el ordenador, sin nube ni suscripciones.
@@ -71,7 +73,7 @@ Como en cualquier editor: arrastrar para seleccionar varios trozos, Mayús + cli
 
 # NoxCut · project presentation (English)
 
-**See the presentation and the videos:** https://garzanox.github.io/noxcut/en/
+**The NoxCut website (features, videos, downloads and contact):** https://garzanox.github.io/noxcut/en/
 
 NoxCut is a video editor for creators, horizontal or vertical, with word-by-word subtitles and helpers to get
 shorts (TikTok, Reels, Shorts) out of gaming streams. It runs entirely on your computer, with no cloud and no
