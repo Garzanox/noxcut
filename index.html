@@ -9,6 +9,7 @@
 <meta property="og:description" content="Editor de vídeo en horizontal o en vertical para streamers: subtítulos palabra a palabra, la cámara encima del juego, tus partidas encontradas solas y cientos de efectos. En tu ordenador, sin nube ni suscripciones.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0f0f17">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><meta property="og:image" content="https://noxcut.es/img/compartir.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://noxcut.es/"><meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://noxcut.es/"><link rel="alternate" hreflang="es" href="https://noxcut.es/"><link rel="alternate" hreflang="en" href="https://noxcut.es/en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +40,9 @@ p { margin: 0; text-wrap: pretty; }
 .top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .top .wrap { display: flex; align-items: center; gap: 22px; height: 60px; }
-.logo { font: 700 1.2rem var(--display); letter-spacing: .14em; color: var(--accent); text-decoration: none; }
+.logo { font: 700 1.2rem var(--display); letter-spacing: .14em; color: var(--accent); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 10px; }
+.logo img { border-radius: 6px; }
 .top nav { display: flex; gap: 20px; margin-left: auto; }
 .top nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: .95rem; }
 .top nav a:hover { color: var(--ink); }
@@ -175,7 +178,7 @@ footer a { color: var(--muted); }
 <body>
 <a class="skip" href="#principal">Saltar al contenido</a>
 <header class="top"><div class="wrap">
-  <a class="logo" href="#">NOXCUT</a>
+  <a class="logo" href="#"><img src="img/favicon-192.png" width="26" height="26" alt="">NOXCUT</a>
   <nav aria-label="Funciones"><a href="#funciones">Funciones</a><a href="#videos">Vídeos</a><a href="#descargar">Descargar</a><a href="#quienes">Quiénes somos</a><a href="#contacto">Contacto</a></nav>
   <span class="langs"><b aria-current="true">ES</b><a href="en/" hreflang="en" lang="en">EN</a></span>
 </div></header>
