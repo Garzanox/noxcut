@@ -7,6 +7,12 @@ GitHub no reproduce los vídeos aquí: pulsa una imagen para verlo en la página
 
 Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti.
 
+### [Voz en off con IA](https://noxcut.es/#video-voz_ia) (0:28)
+
+[![Voz en off con IA](voz_ia.jpg)](https://noxcut.es/#video-voz_ia)
+
+Un proyecto en blanco para TikTok: escribes el texto, eliges una de las 10 voces (5 de hombre y 5 de mujer) y NoxCut la pone en una pista nueva, con sus subtítulos palabra a palabra. Todo en tu ordenador.
+
 ### [Subtítulos palabra a palabra](https://noxcut.es/#video-subtitulos) (0:30)
 
 [![Subtítulos palabra a palabra](subtitulos.jpg)](https://noxcut.es/#video-subtitulos)

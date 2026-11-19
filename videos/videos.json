@@ -7,6 +7,13 @@
   "segundos": 26
  },
  {
+  "video": "voz_ia.mp4",
+  "portada": "voz_ia.jpg",
+  "titulo": "Voz en off con IA",
+  "texto": "Un proyecto en blanco para TikTok: escribes el texto, eliges una de las 10 voces (5 de hombre y 5 de mujer) y NoxCut la pone en una pista nueva, con sus subtítulos palabra a palabra. Todo en tu ordenador.",
+  "segundos": 28
+ },
+ {
   "video": "subtitulos.mp4",
   "portada": "subtitulos.jpg",
   "titulo": "Subtítulos palabra a palabra",

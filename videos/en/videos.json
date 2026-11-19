@@ -7,6 +7,13 @@
   "segundos": 26
  },
  {
+  "video": "voz_ia.mp4",
+  "portada": "voz_ia.jpg",
+  "titulo": "AI voice-over",
+  "texto": "A blank project for TikTok: type the text, pick one of the 10 voices (5 male and 5 female) and NoxCut puts it on a new track, with word-by-word subtitles. All on your computer.",
+  "segundos": 27
+ },
+ {
   "video": "subtitulos.mp4",
   "portada": "subtitulos.jpg",
   "titulo": "Word-by-word subtitles",
