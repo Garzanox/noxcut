@@ -11,10 +11,92 @@
 <meta name="theme-color" content="#0f0f17">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><meta property="og:image" content="https://noxcut.es/img/compartir.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://noxcut.es/"><meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://noxcut.es/"><link rel="alternate" hreflang="es" href="https://noxcut.es/"><link rel="alternate" hreflang="en" href="https://noxcut.es/en/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
-<style>
+<style>@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fuentes/NunitoSans-latin-ext-0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fuentes/NunitoSans-latin-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fuentes/NunitoSans-latin-ext-0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fuentes/NunitoSans-latin-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fuentes/NunitoSans-latin-ext-0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fuentes/NunitoSans-latin-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fuentes/Sora-latin-ext-2.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fuentes/Sora-latin-3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fuentes/Sora-latin-ext-2.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fuentes/Sora-latin-3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 :root {
   --bg: #0f0f17; --bg2: #13131d; --panel: #181826; --line: #2a2940;
   --ink: #ecebf5; --muted: #a3a1bd; --accent: #8b7bff; --accent-ink: #0f0f17; --amber: #f5a524;
@@ -185,7 +267,7 @@ footer a { color: var(--muted); }
 <main id="principal">
 <div class="hero"><div class="wrap">
   <div>
-    <span class="badge">Versión 2.13.1</span>
+    <span class="badge">Versión 2.13.2</span>
     <h1>De un directo de horas a tus shorts, con subtítulos.</h1>
     <p class="lead">NoxCut es un editor de vídeo en horizontal o en vertical pensado para streamers: subtítulos palabra a palabra, tu cámara encima del juego, tus partidas y tus mejores jugadas encontradas solas y cientos de efectos. Todo en tu ordenador, sin nube ni suscripciones.</p>
     <div class="ctas"><a class="btn main" href="#descargar">Descargar NoxCut</a>
@@ -232,7 +314,7 @@ footer a { color: var(--muted); }
 </div></section>
 
 <section id="contacto"><div class="wrap">
-  <div class="head"><h2>Contacto</h2><p>¿Quieres probar NoxCut o tienes una pregunta? Escríbenos. Solo lo lee el equipo de NoxCut, para contestarte.</p></div>
+  <div class="head"><h2>Contacto</h2><p>¿Quieres probar NoxCut o tienes una pregunta? Escríbenos. Lo leen Garzanox y su editora; se guarda en Cloudflare y puede procesarse con Claude (Anthropic) para contestarte. Más información en la <a href="privacidad/">política de privacidad</a>.</p></div>
   <form id="form" action="https://noxcut-buzon.garzanox.workers.dev/v1/contacto" method="post" novalidate>
     <label>Tu nombre o nick<input name="nombre" maxlength="60" autocomplete="nickname"></label>
     <label>Dónde te contestamos<input name="contacto" maxlength="120" required placeholder="Correo, Discord, Instagram…"></label>
@@ -245,7 +327,7 @@ footer a { color: var(--muted); }
   </form>
 </div></section>
 </main>
-<footer><div class="wrap"><span>NoxCut™ · © 2026 Garzanox</span><span>Obra registrada · <a href="presentacion/">Presentación del proyecto</a> · Actualizado el 19/11/2026</span></div></footer>
+<footer><div class="wrap"><span>NoxCut™ · © 2026 Garzanox</span><span>Obra registrada · <a href="presentacion/">Presentación del proyecto</a> · <a href="privacidad/">Política de privacidad</a> · Actualizado el 19/11/2026</span></div></footer>
 <script>const TEXTOS = {"falta": "Rellena dónde contestarte y el mensaje.", "enviando": "Enviando…", "ok": "¡Recibido! Te contestaremos lo antes posible.", "error": "No se ha podido enviar. Prueba otra vez en un rato."};
 // Los enlaces de antes a una diapositiva (…/#diapositiva-3) siguen yendo a la presentación.
 if (/^#(diapositiva|slide)-\d+$/.test(location.hash)) location.replace("presentacion/" + location.hash);
