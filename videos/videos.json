@@ -7,6 +7,13 @@
   "segundos": 26
  },
  {
+  "video": "guion.mp4",
+  "portada": "guion.jpg",
+  "titulo": "Del guion al vídeo",
+  "texto": "Pegas tu guion y eliges la voz (la grabas tú leyéndolo, un audio que ya tienes o una voz de IA): NoxCut monta el vídeo solo, con los subtítulos de tu texto, una escena por frase, el título gancho y los sonidos.",
+  "segundos": 31
+ },
+ {
   "video": "voz_ia.mp4",
   "portada": "voz_ia.jpg",
   "titulo": "Voz en off con IA",

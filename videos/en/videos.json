@@ -7,6 +7,13 @@
   "segundos": 26
  },
  {
+  "video": "guion.mp4",
+  "portada": "guion.jpg",
+  "titulo": "From script to video",
+  "texto": "Paste your script and choose the voice (record it yourself reading it, an audio you already have or an AI voice): NoxCut edits the video by itself, with your text as subtitles, one scene per sentence, the hook title and the sounds.",
+  "segundos": 33
+ },
+ {
   "video": "voz_ia.mp4",
   "portada": "voz_ia.jpg",
   "titulo": "AI voice-over",

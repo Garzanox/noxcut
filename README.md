@@ -21,6 +21,12 @@ GitHub no reproduce los vídeos dentro del repositorio: pulsa una imagen para ve
 
 Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti.
 
+### [Del guion al vídeo](https://noxcut.es/#video-guion) (0:31)
+
+[![Del guion al vídeo](videos/guion.jpg)](https://noxcut.es/#video-guion)
+
+Pegas tu guion y eliges la voz (la grabas tú leyéndolo, un audio que ya tienes o una voz de IA): NoxCut monta el vídeo solo, con los subtítulos de tu texto, una escena por frase, el título gancho y los sonidos.
+
 ### [Voz en off con IA](https://noxcut.es/#video-voz_ia) (0:28)
 
 [![Voz en off con IA](videos/voz_ia.jpg)](https://noxcut.es/#video-voz_ia)
@@ -97,6 +103,12 @@ GitHub doesn't play videos inside the repository: click an image to watch it on 
 [![Editing by voice](videos/en/voz.jpg)](https://noxcut.es/en/#video-voz)
 
 You tell it like you'd tell a person: NoxCut shows what it understood, step by step, and does it in front of you.
+
+### [From script to video](https://noxcut.es/en/#video-guion) (0:33)
+
+[![From script to video](videos/en/guion.jpg)](https://noxcut.es/en/#video-guion)
+
+Paste your script and choose the voice (record it yourself reading it, an audio you already have or an AI voice): NoxCut edits the video by itself, with your text as subtitles, one scene per sentence, the hook title and the sounds.
 
 ### [AI voice-over](https://noxcut.es/en/#video-voz_ia) (0:27)
 

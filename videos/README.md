@@ -7,6 +7,12 @@ GitHub no reproduce los vídeos aquí: pulsa una imagen para verlo en la página
 
 Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti.
 
+### [Del guion al vídeo](https://noxcut.es/#video-guion) (0:31)
+
+[![Del guion al vídeo](guion.jpg)](https://noxcut.es/#video-guion)
+
+Pegas tu guion y eliges la voz (la grabas tú leyéndolo, un audio que ya tienes o una voz de IA): NoxCut monta el vídeo solo, con los subtítulos de tu texto, una escena por frase, el título gancho y los sonidos.
+
 ### [Voz en off con IA](https://noxcut.es/#video-voz_ia) (0:28)
 
 [![Voz en off con IA](voz_ia.jpg)](https://noxcut.es/#video-voz_ia)
