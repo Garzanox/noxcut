@@ -27,6 +27,12 @@ Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso,
 
 Pegas tu guion y eliges la voz (la grabas tú leyéndolo, un audio que ya tienes o una voz de IA): NoxCut monta el vídeo solo, con los subtítulos de tu texto, una escena por frase, el título gancho y los sonidos.
 
+### [Publicar en TikTok, Instagram y YouTube (pronto)](https://noxcut.es/#video-publicar) (0:30)
+
+[![Publicar en TikTok, Instagram y YouTube (pronto)](videos/publicar.jpg)](https://noxcut.es/#video-publicar)
+
+Bloqueado hasta que TikTok, Instagram y YouTube aprueben la app de NoxCut. Las tres redes a la vez, con el texto de cada una ya escrito, tu portada, ahora o a una hora, y «Publicaciones» para ver cómo va.
+
 ### [Voz en off con IA](https://noxcut.es/#video-voz_ia) (0:28)
 
 [![Voz en off con IA](videos/voz_ia.jpg)](https://noxcut.es/#video-voz_ia)
@@ -109,6 +115,12 @@ You tell it like you'd tell a person: NoxCut shows what it understood, step by s
 [![From script to video](videos/en/guion.jpg)](https://noxcut.es/en/#video-guion)
 
 Paste your script and choose the voice (record it yourself reading it, an audio you already have or an AI voice): NoxCut edits the video by itself, with your text as subtitles, one scene per sentence, the hook title and the sounds.
+
+### [Publish to TikTok, Instagram and YouTube (coming soon)](https://noxcut.es/en/#video-publicar) (0:30)
+
+[![Publish to TikTok, Instagram and YouTube (coming soon)](videos/en/publicar.jpg)](https://noxcut.es/en/#video-publicar)
+
+Locked until TikTok, Instagram and YouTube approve the NoxCut app. All three networks at once, with each one's text already written, your cover, now or at a set time, and “Posts” to see how it's going.
 
 ### [AI voice-over](https://noxcut.es/en/#video-voz_ia) (0:27)
 

@@ -13,6 +13,12 @@ Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso,
 
 Pegas tu guion y eliges la voz (la grabas tú leyéndolo, un audio que ya tienes o una voz de IA): NoxCut monta el vídeo solo, con los subtítulos de tu texto, una escena por frase, el título gancho y los sonidos.
 
+### [Publicar en TikTok, Instagram y YouTube (pronto)](https://noxcut.es/#video-publicar) (0:30)
+
+[![Publicar en TikTok, Instagram y YouTube (pronto)](publicar.jpg)](https://noxcut.es/#video-publicar)
+
+Bloqueado hasta que TikTok, Instagram y YouTube aprueben la app de NoxCut. Las tres redes a la vez, con el texto de cada una ya escrito, tu portada, ahora o a una hora, y «Publicaciones» para ver cómo va.
+
 ### [Voz en off con IA](https://noxcut.es/#video-voz_ia) (0:28)
 
 [![Voz en off con IA](voz_ia.jpg)](https://noxcut.es/#video-voz_ia)
