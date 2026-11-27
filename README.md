@@ -15,7 +15,7 @@ programas que descargar ni ejecutar. Se actualiza a medida que avanza el proyect
 
 GitHub no reproduce los vídeos dentro del repositorio: pulsa una imagen para verlo en la página.
 
-### [Editar con la voz](https://noxcut.es/#video-voz) (0:26)
+### [Editar con la voz](https://noxcut.es/#video-voz) (0:24)
 
 [![Editar con la voz](videos/voz.jpg)](https://noxcut.es/#video-voz)
 
@@ -39,7 +39,7 @@ Bloqueado hasta que TikTok, Instagram y YouTube aprueben la app de NoxCut. Las t
 
 Un proyecto en blanco para TikTok: escribes el texto, eliges una de las 10 voces (5 de hombre y 5 de mujer) y NoxCut la pone en una pista nueva, con sus subtítulos palabra a palabra. Todo en tu ordenador.
 
-### [Subtítulos palabra a palabra](https://noxcut.es/#video-subtitulos) (0:30)
+### [Subtítulos palabra a palabra](https://noxcut.es/#video-subtitulos) (0:28)
 
 [![Subtítulos palabra a palabra](videos/subtitulos.jpg)](https://noxcut.es/#video-subtitulos)
 
@@ -51,19 +51,19 @@ Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrig
 
 El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 3:4…), con sombra. Se arrastra a cualquier sitio en la vista previa y la rueda del ratón cambia su tamaño.
 
-### [Detectar partidas y una secuencia por partida](https://noxcut.es/#video-partidas) (0:22)
+### [Detectar partidas y una secuencia por partida](https://noxcut.es/#video-partidas) (0:24)
 
 [![Detectar partidas y una secuencia por partida](videos/partidas.jpg)](https://noxcut.es/#video-partidas)
 
 Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña.
 
-### [Recopilar tus kills](https://noxcut.es/#video-kills) (0:37)
+### [Recopilar tus kills](https://noxcut.es/#video-kills) (0:41)
 
 [![Recopilar tus kills](videos/kills.jpg)](https://noxcut.es/#video-kills)
 
 Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer.
 
-### [Tus proyectos al abrir](https://noxcut.es/#video-proyectos) (0:23)
+### [Tus proyectos al abrir](https://noxcut.es/#video-proyectos) (0:22)
 
 [![Tus proyectos al abrir](videos/proyectos.jpg)](https://noxcut.es/#video-proyectos)
 
@@ -104,7 +104,7 @@ in action. There are no programs to download or run. It's updated as the project
 
 GitHub doesn't play videos inside the repository: click an image to watch it on the page.
 
-### [Editing by voice](https://noxcut.es/en/#video-voz) (0:26)
+### [Editing by voice](https://noxcut.es/en/#video-voz) (0:24)
 
 [![Editing by voice](videos/en/voz.jpg)](https://noxcut.es/en/#video-voz)
 
@@ -122,13 +122,13 @@ Paste your script and choose the voice (record it yourself reading it, an audio 
 
 Locked until TikTok, Instagram and YouTube approve the NoxCut app. All three networks at once, with each one's text already written, your cover, now or at a set time, and “Posts” to see how it's going.
 
-### [AI voice-over](https://noxcut.es/en/#video-voz_ia) (0:27)
+### [AI voice-over](https://noxcut.es/en/#video-voz_ia) (0:28)
 
 [![AI voice-over](videos/en/voz_ia.jpg)](https://noxcut.es/en/#video-voz_ia)
 
 A blank project for TikTok: type the text, pick one of the 10 voices (5 male and 5 female) and NoxCut puts it on a new track, with word-by-word subtitles. All on your computer.
 
-### [Word-by-word subtitles](https://noxcut.es/en/#video-subtitulos) (0:30)
+### [Word-by-word subtitles](https://noxcut.es/en/#video-subtitulos) (0:28)
 
 [![Word-by-word subtitles](videos/en/subtitulos.jpg)](https://noxcut.es/en/#video-subtitulos)
 
@@ -152,7 +152,7 @@ A 2 h 40 min stream: NoxCut finds the 11 matches and puts each one in its own ta
 
 Without typing anything: NoxCut recognises the player from their own deaths, counts the kills in each round and keeps the ones you choose (doubles, triples, aces…). Before changing anything, it says what it's going to do.
 
-### [Your projects when it opens](https://noxcut.es/en/#video-proyectos) (0:23)
+### [Your projects when it opens](https://noxcut.es/en/#video-proyectos) (0:22)
 
 [![Your projects when it opens](videos/en/proyectos.jpg)](https://noxcut.es/en/#video-proyectos)
 

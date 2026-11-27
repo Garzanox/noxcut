@@ -4,7 +4,7 @@
   "portada": "voz.jpg",
   "titulo": "Editing by voice",
   "texto": "You tell it like you'd tell a person: NoxCut shows what it understood, step by step, and does it in front of you.",
-  "segundos": 26
+  "segundos": 24
  },
  {
   "video": "guion.mp4",
@@ -25,14 +25,14 @@
   "portada": "voz_ia.jpg",
   "titulo": "AI voice-over",
   "texto": "A blank project for TikTok: type the text, pick one of the 10 voices (5 male and 5 female) and NoxCut puts it on a new track, with word-by-word subtitles. All on your computer.",
-  "segundos": 27
+  "segundos": 28
  },
  {
   "video": "subtitulos.mp4",
   "portada": "subtitulos.jpg",
   "titulo": "Word-by-word subtitles",
   "texto": "Generated on your computer (offline), each word with its timing. Corrected by typing, and the style is chosen from a gallery: karaoke, word by word or with “pop”.",
-  "segundos": 30
+  "segundos": 28
  },
  {
   "video": "camara.mp4",
@@ -60,7 +60,7 @@
   "portada": "proyectos.jpg",
   "titulo": "Your projects when it opens",
   "texto": "A single window: NoxCut opens with all your projects, each with a frame from its video. Search as you type and, when you choose one, the same window switches to the editor.",
-  "segundos": 23
+  "segundos": 22
  },
  {
   "video": "elementos.mp4",

@@ -1,7 +1,7 @@
 # Vídeos de NoxCut
 
 GitHub no reproduce los vídeos aquí: pulsa una imagen para verlo en la página.
-### [Editar con la voz](https://noxcut.es/#video-voz) (0:26)
+### [Editar con la voz](https://noxcut.es/#video-voz) (0:24)
 
 [![Editar con la voz](voz.jpg)](https://noxcut.es/#video-voz)
 
@@ -25,7 +25,7 @@ Bloqueado hasta que TikTok, Instagram y YouTube aprueben la app de NoxCut. Las t
 
 Un proyecto en blanco para TikTok: escribes el texto, eliges una de las 10 voces (5 de hombre y 5 de mujer) y NoxCut la pone en una pista nueva, con sus subtítulos palabra a palabra. Todo en tu ordenador.
 
-### [Subtítulos palabra a palabra](https://noxcut.es/#video-subtitulos) (0:30)
+### [Subtítulos palabra a palabra](https://noxcut.es/#video-subtitulos) (0:28)
 
 [![Subtítulos palabra a palabra](subtitulos.jpg)](https://noxcut.es/#video-subtitulos)
 
@@ -37,19 +37,19 @@ Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrig
 
 El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 3:4…), con sombra. Se arrastra a cualquier sitio en la vista previa y la rueda del ratón cambia su tamaño.
 
-### [Detectar partidas y una secuencia por partida](https://noxcut.es/#video-partidas) (0:22)
+### [Detectar partidas y una secuencia por partida](https://noxcut.es/#video-partidas) (0:24)
 
 [![Detectar partidas y una secuencia por partida](partidas.jpg)](https://noxcut.es/#video-partidas)
 
 Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña.
 
-### [Recopilar tus kills](https://noxcut.es/#video-kills) (0:37)
+### [Recopilar tus kills](https://noxcut.es/#video-kills) (0:41)
 
 [![Recopilar tus kills](kills.jpg)](https://noxcut.es/#video-kills)
 
 Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer.
 
-### [Tus proyectos al abrir](https://noxcut.es/#video-proyectos) (0:23)
+### [Tus proyectos al abrir](https://noxcut.es/#video-proyectos) (0:22)
 
 [![Tus proyectos al abrir](proyectos.jpg)](https://noxcut.es/#video-proyectos)
 

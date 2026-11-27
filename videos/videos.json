@@ -4,7 +4,7 @@
   "portada": "voz.jpg",
   "titulo": "Editar con la voz",
   "texto": "Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti.",
-  "segundos": 26
+  "segundos": 24
  },
  {
   "video": "guion.mp4",
@@ -32,7 +32,7 @@
   "portada": "subtitulos.jpg",
   "titulo": "Subtítulos palabra a palabra",
   "texto": "Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrigen escribiendo y el estilo se elige de una galería: karaoke, palabra a palabra o con «pop».",
-  "segundos": 30
+  "segundos": 28
  },
  {
   "video": "camara.mp4",
@@ -46,21 +46,21 @@
   "portada": "partidas.jpg",
   "titulo": "Detectar partidas y una secuencia por partida",
   "texto": "Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña.",
-  "segundos": 22
+  "segundos": 24
  },
  {
   "video": "kills.mp4",
   "portada": "kills.jpg",
   "titulo": "Recopilar tus kills",
   "texto": "Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer.",
-  "segundos": 37
+  "segundos": 41
  },
  {
   "video": "proyectos.mp4",
   "portada": "proyectos.jpg",
   "titulo": "Tus proyectos al abrir",
   "texto": "Una sola ventana: NoxCut se abre con todos tus proyectos, cada uno con un fotograma de su vídeo. Se buscan mientras escribes y, al elegir uno, la misma ventana pasa al editor.",
-  "segundos": 23
+  "segundos": 22
  },
  {
   "video": "elementos.mp4",

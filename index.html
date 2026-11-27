@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-yFklrVlja4iK5c/FPmx9m91UZq9M9HTYOyi393t70kY='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' https://noxcut-buzon.garzanox.workers.dev; form-action 'self' https://noxcut-buzon.garzanox.workers.dev; object-src 'none'; base-uri 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-lSQyGKaXxzbpZMJQRQd54NMYHpng97OYQOPqednLjD0='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' https://noxcut-buzon.garzanox.workers.dev; form-action 'self' https://noxcut-buzon.garzanox.workers.dev; object-src 'none'; base-uri 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <meta charset="utf-8">
@@ -226,7 +226,11 @@ section.alt { background: var(--bg2); border-block: 1px solid var(--line); }
 /* Contacto */
 form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; max-width: 820px; }
 label { display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: .93rem; }
-label.full, .enviar { grid-column: 1 / -1; }
+label.full, .enviar, .casillas { grid-column: 1 / -1; }
+label[hidden] { display: none; }
+.casillas { display: grid; gap: 10px; }
+.casillas label { flex-direction: row; align-items: flex-start; gap: 10px; font-weight: 400; }
+.casillas input { width: 20px; height: 20px; flex: none; margin: 1px 0 0; accent-color: var(--accent); }
 input, select, textarea { font: 400 1rem var(--body); color: var(--ink); background: var(--panel);
   border: 1px solid var(--line); border-radius: 9px; padding: 11px 12px; width: 100%; }
 textarea { min-height: 140px; resize: vertical; }
@@ -270,7 +274,7 @@ footer a { color: var(--muted); }
 <main id="principal">
 <div class="hero"><div class="wrap">
   <div>
-    <span class="badge">Versión 2.16</span>
+    <span class="badge">Versión 2.16.1</span>
     <h1>De un directo de horas a tus shorts, con subtítulos.</h1>
     <p class="lead">NoxCut es un editor de vídeo en horizontal o en vertical pensado para streamers: subtítulos palabra a palabra, tu cámara encima del juego, tus partidas y tus mejores jugadas encontradas solas y cientos de efectos. Todo en tu ordenador, sin nube ni suscripciones.</p>
     <div class="ctas"><a class="btn main" href="#descargar">Descargar NoxCut</a>
@@ -282,7 +286,7 @@ footer a { color: var(--muted); }
 
 <section id="funciones"><div class="wrap">
   <div class="head"><h2>Lo que hace por ti</h2><p>Lo que más tiempo te quita al editar un directo, NoxCut lo hace solo; tú decides el resultado.</p></div>
-  <div class="fila"><figure><img class="shot" src="img/ventana_principal.webp?v=a8bc1286fe" width="1400" height="875" alt="Subtítulos palabra a palabra" loading="lazy" decoding="async"></figure><div><h3>Subtítulos palabra a palabra</h3><p>Se generan en tu ordenador, sin internet, cada palabra con su tiempo. Se corrigen escribiendo en la tabla, se buscan como en un buscador («¿dónde dije “qué jugada”?») y se eligen de una galería de estilos para shorts: karaoke, palabra a palabra, con «pop»…</p></div></div><div class="fila"><figure><img class="shot" src="img/vertical_ventana.webp?v=ff513faca2" width="1400" height="875" alt="De horizontal a vertical con un botón" loading="lazy" decoding="async"></figure><div><h3>De horizontal a vertical con un botón</h3><p>La plantilla vertical pone tu cámara arriba y el juego abajo, o la cámara flotante encima, redonda y con sombra. Se arrastra en la vista previa y cada trozo puede tener su propio encuadre.</p></div></div><div class="fila"><figure><img class="shot" src="img/directo_partidas_ventana.webp?v=99c229b417" width="1400" height="875" alt="Tus partidas y tus jugadas, encontradas solas" loading="lazy" decoding="async"></figure><div><h3>Tus partidas y tus jugadas, encontradas solas</h3><p>Un directo de casi tres horas: NoxCut encuentra cada partida en segundos y pasa cada una a su propia pestaña. En los shooters tácticos también reúne tus kills por rondas: dobles, triples, ace…</p></div></div><div class="fila"><figure><img class="shot" src="img/voz_ventana.webp?v=0495007c90" width="1400" height="875" alt="Edita hablando" loading="lazy" decoding="async"></figure><div><h3>Edita hablando</h3><p>Díselo como a una persona: «quita los silencios», «deja solo la partida 3». NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti.</p></div></div><div class="fila"><figure><img class="shot" src="img/miniatura_app.webp?v=f298c459ee" width="1400" height="894" alt="Miniaturas en un momento" loading="lazy" decoding="async"></figure><div><h3>Miniaturas en un momento</h3><p>Elige un fotograma del juego de fondo, saca tu figura recortada de la cámara y añade textos y stickers. Guarda tus plantillas para la próxima.</p></div></div>
+  <div class="fila"><figure><img class="shot" src="img/ventana_principal.webp?v=01371c6960" width="1400" height="875" alt="Subtítulos palabra a palabra" loading="lazy" decoding="async"></figure><div><h3>Subtítulos palabra a palabra</h3><p>Se generan en tu ordenador, sin internet, cada palabra con su tiempo. Se corrigen escribiendo en la tabla, se buscan como en un buscador («¿dónde dije “qué jugada”?») y se eligen de una galería de estilos para shorts: karaoke, palabra a palabra, con «pop»…</p></div></div><div class="fila"><figure><img class="shot" src="img/vertical_ventana.webp?v=ff513faca2" width="1400" height="875" alt="De horizontal a vertical con un botón" loading="lazy" decoding="async"></figure><div><h3>De horizontal a vertical con un botón</h3><p>La plantilla vertical pone tu cámara arriba y el juego abajo, o la cámara flotante encima, redonda y con sombra. Se arrastra en la vista previa y cada trozo puede tener su propio encuadre.</p></div></div><div class="fila"><figure><img class="shot" src="img/directo_partidas_ventana.webp?v=f2518554ca" width="1400" height="875" alt="Tus partidas y tus jugadas, encontradas solas" loading="lazy" decoding="async"></figure><div><h3>Tus partidas y tus jugadas, encontradas solas</h3><p>Un directo de casi tres horas: NoxCut encuentra cada partida en segundos y pasa cada una a su propia pestaña. En los shooters tácticos también reúne tus kills por rondas: dobles, triples, ace…</p></div></div><div class="fila"><figure><img class="shot" src="img/voz_ventana.webp?v=0495007c90" width="1400" height="875" alt="Edita hablando" loading="lazy" decoding="async"></figure><div><h3>Edita hablando</h3><p>Díselo como a una persona: «quita los silencios», «deja solo la partida 3». NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti.</p></div></div><div class="fila"><figure><img class="shot" src="img/miniatura_app.webp?v=f298c459ee" width="1400" height="894" alt="Miniaturas en un momento" loading="lazy" decoding="async"></figure><div><h3>Miniaturas en un momento</h3><p>Elige un fotograma del juego de fondo, saca tu figura recortada de la cámara y añade textos y stickers. Guarda tus plantillas para la próxima.</p></div></div>
 </div></section>
 
 <section class="alt"><div class="wrap">
@@ -291,18 +295,18 @@ footer a { color: var(--muted); }
   <div class="novedades"><h3>Lo último: versión 2.16</h3><ul><li>«Solo cámara» y «Solo juego» en la plantilla vertical: «Solo cámara» pone tu webcam a pantalla completa y «Solo juego», una zona vertical del juego</li><li>En pantalla completa, una barra para ir a cualquier punto del vídeo sin salir: haz clic o arrástrala y verás el tiempo mientras</li><li>La vista ligera ya no le quita la tarjeta gráfica a OBS: con OBS abierto se prepara con el procesador, despacio, para que tu directo no dé tirones</li></ul></div>
 </div></section>
 
-<section id="videos" class="alt"><div class="wrap"><div class="head"><h2>Míralo funcionando</h2><p>Vídeos grabados usando NoxCut de verdad, sin montajes. Se vuelven a grabar cuando algo cambia.</p></div><div class="videos"><article id="video-voz"><video controls preload="none" playsinline poster="videos/voz.jpg?v=58469894e5" src="videos/voz.mp4?v=a35a1c9eb2" aria-label="Editar con la voz"></video><h3>Editar con la voz</h3><p>Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti. <span class="dur">0:26</span></p></article>
-<article id="video-guion"><video controls preload="none" playsinline poster="videos/guion.jpg?v=54ea6c2626" src="videos/guion.mp4?v=d14a7bbff2" aria-label="Del guion al vídeo"></video><h3>Del guion al vídeo</h3><p>Pegas tu guion y eliges la voz (la grabas tú leyéndolo, un audio que ya tienes o una voz de IA): NoxCut monta el vídeo solo, con los subtítulos de tu texto, una escena por frase, el título gancho y los sonidos. <span class="dur">0:31</span></p></article>
-<article id="video-publicar"><video controls preload="none" playsinline poster="videos/publicar.jpg?v=712158477b" src="videos/publicar.mp4?v=65bc282898" aria-label="Publicar en TikTok, Instagram y YouTube (pronto)"></video><h3>Publicar en TikTok, Instagram y YouTube (pronto)</h3><p>Bloqueado hasta que TikTok, Instagram y YouTube aprueben la app de NoxCut. Las tres redes a la vez, con el texto de cada una ya escrito, tu portada, ahora o a una hora, y «Publicaciones» para ver cómo va. <span class="dur">0:30</span></p></article>
-<article id="video-voz_ia"><video controls preload="none" playsinline poster="videos/voz_ia.jpg?v=16f36a6d55" src="videos/voz_ia.mp4?v=64958135ed" aria-label="Voz en off con IA"></video><h3>Voz en off con IA</h3><p>Un proyecto en blanco para TikTok: escribes el texto, eliges una de las 10 voces (5 de hombre y 5 de mujer) y NoxCut la pone en una pista nueva, con sus subtítulos palabra a palabra. Todo en tu ordenador. <span class="dur">0:28</span></p></article>
-<article id="video-subtitulos"><video controls preload="none" playsinline poster="videos/subtitulos.jpg?v=4bbc8416e1" src="videos/subtitulos.mp4?v=34648f3a38" aria-label="Subtítulos palabra a palabra"></video><h3>Subtítulos palabra a palabra</h3><p>Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrigen escribiendo y el estilo se elige de una galería: karaoke, palabra a palabra o con «pop». <span class="dur">0:30</span></p></article>
+<section id="videos" class="alt"><div class="wrap"><div class="head"><h2>Míralo funcionando</h2><p>Vídeos grabados usando NoxCut de verdad, sin montajes. Se vuelven a grabar cuando algo cambia.</p></div><div class="videos"><article id="video-voz"><video controls preload="none" playsinline poster="videos/voz.jpg?v=4a6775efaf" src="videos/voz.mp4?v=10eb05d370" aria-label="Editar con la voz"></video><h3>Editar con la voz</h3><p>Se lo dices como a una persona: NoxCut enseña lo que ha entendido, paso a paso, y lo hace delante de ti. <span class="dur">0:24</span></p></article>
+<article id="video-guion"><video controls preload="none" playsinline poster="videos/guion.jpg?v=a2e5aecca0" src="videos/guion.mp4?v=686a362238" aria-label="Del guion al vídeo"></video><h3>Del guion al vídeo</h3><p>Pegas tu guion y eliges la voz (la grabas tú leyéndolo, un audio que ya tienes o una voz de IA): NoxCut monta el vídeo solo, con los subtítulos de tu texto, una escena por frase, el título gancho y los sonidos. <span class="dur">0:31</span></p></article>
+<article id="video-publicar"><video controls preload="none" playsinline poster="videos/publicar.jpg?v=8e1bdbc31f" src="videos/publicar.mp4?v=9d6be81e2e" aria-label="Publicar en TikTok, Instagram y YouTube (pronto)"></video><h3>Publicar en TikTok, Instagram y YouTube (pronto)</h3><p>Bloqueado hasta que TikTok, Instagram y YouTube aprueben la app de NoxCut. Las tres redes a la vez, con el texto de cada una ya escrito, tu portada, ahora o a una hora, y «Publicaciones» para ver cómo va. <span class="dur">0:30</span></p></article>
+<article id="video-voz_ia"><video controls preload="none" playsinline poster="videos/voz_ia.jpg?v=16f36a6d55" src="videos/voz_ia.mp4?v=1348985e85" aria-label="Voz en off con IA"></video><h3>Voz en off con IA</h3><p>Un proyecto en blanco para TikTok: escribes el texto, eliges una de las 10 voces (5 de hombre y 5 de mujer) y NoxCut la pone en una pista nueva, con sus subtítulos palabra a palabra. Todo en tu ordenador. <span class="dur">0:28</span></p></article>
+<article id="video-subtitulos"><video controls preload="none" playsinline poster="videos/subtitulos.jpg?v=ddc3e0e7bb" src="videos/subtitulos.mp4?v=377b3ac99e" aria-label="Subtítulos palabra a palabra"></video><h3>Subtítulos palabra a palabra</h3><p>Se generan en tu ordenador (sin internet), cada palabra con su tiempo. Se corrigen escribiendo y el estilo se elige de una galería: karaoke, palabra a palabra o con «pop». <span class="dur">0:28</span></p></article>
 <article id="video-camara"><video controls preload="none" playsinline poster="videos/camara.jpg?v=5bee7c25fc" src="videos/camara.mp4?v=2ccaae9ef1" aria-label="Plantilla vertical con la cámara flotante"></video><h3>Plantilla vertical con la cámara flotante</h3><p>El juego a pantalla completa y tu cámara encima, en círculo (o cuadrada, 4:3, 3:4…), con sombra. Se arrastra a cualquier sitio en la vista previa y la rueda del ratón cambia su tamaño. <span class="dur">0:26</span></p></article>
-<article id="video-partidas"><video controls preload="none" playsinline poster="videos/partidas.jpg?v=5515ec6723" src="videos/partidas.mp4?v=bac6f1a226" aria-label="Detectar partidas y una secuencia por partida"></video><h3>Detectar partidas y una secuencia por partida</h3><p>Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña. <span class="dur">0:22</span></p></article>
-<article id="video-kills"><video controls preload="none" playsinline poster="videos/kills.jpg?v=bc5f4d7a90" src="videos/kills.mp4?v=707a0b9822" aria-label="Recopilar tus kills"></video><h3>Recopilar tus kills</h3><p>Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer. <span class="dur">0:37</span></p></article>
-<article id="video-proyectos"><video controls preload="none" playsinline poster="videos/proyectos.jpg?v=cb61d6ae10" src="videos/proyectos.mp4?v=45f75f6b41" aria-label="Tus proyectos al abrir"></video><h3>Tus proyectos al abrir</h3><p>Una sola ventana: NoxCut se abre con todos tus proyectos, cada uno con un fotograma de su vídeo. Se buscan mientras escribes y, al elegir uno, la misma ventana pasa al editor. <span class="dur">0:23</span></p></article>
-<article id="video-elementos"><video controls preload="none" playsinline poster="videos/elementos.jpg?v=f271067f56" src="videos/elementos.mp4?v=c29808bbc7" aria-label="Elementos: arrastrar y buscar"></video><h3>Elementos: arrastrar y buscar</h3><p>Imágenes y GIF arrastrados desde el Explorador o el Finder a cualquier parte de la ventana. Con cientos, el buscador los encuentra mientras escribes; luego, al vídeo. <span class="dur">0:17</span></p></article>
-<article id="video-guia"><video controls preload="none" playsinline poster="videos/guia.jpg?v=747dfbf473" src="videos/guia.mp4?v=76c6777fca" aria-label="La guía: cada parte, explicada en su sitio"></video><h3>La guía: cada parte, explicada en su sitio</h3><p>«📖 Guía»: elige un tema (por ejemplo, «Cómo hacer cortes») y NoxCut te lleva a esa parte, con una explicación junto a cada botón. O el recorrido completo, que se para y se sigue cuando quieras. <span class="dur">0:27</span></p></article>
-<article id="video-seleccion"><video controls preload="none" playsinline poster="videos/seleccion.jpg?v=9205e2c1ab" src="videos/seleccion.mp4?v=ba2df44554" aria-label="Seleccionar, borrar y agrupar trozos"></video><h3>Seleccionar, borrar y agrupar trozos</h3><p>Como en cualquier editor: arrastrar para seleccionar varios trozos, Mayús + clic, borrar un tramo de todas las pistas desde la regla y agrupar trozos en un bloque que se mueve entero. <span class="dur">0:25</span></p></article></div></div></section>
+<article id="video-partidas"><video controls preload="none" playsinline poster="videos/partidas.jpg?v=06e6af316a" src="videos/partidas.mp4?v=0b5453555f" aria-label="Detectar partidas y una secuencia por partida"></video><h3>Detectar partidas y una secuencia por partida</h3><p>Un directo de 2 h 40 min: NoxCut encuentra las 11 partidas y pasa cada una a su propia pestaña. <span class="dur">0:24</span></p></article>
+<article id="video-kills"><video controls preload="none" playsinline poster="videos/kills.jpg?v=d6a58e234e" src="videos/kills.mp4?v=ffc95222c9" aria-label="Recopilar tus kills"></video><h3>Recopilar tus kills</h3><p>Sin escribir nada: NoxCut reconoce al jugador por sus propias muertes, cuenta las kills de cada ronda y se queda con las que elijas (dobles, triples, ace…). Antes de cambiar nada, dice lo que va a hacer. <span class="dur">0:41</span></p></article>
+<article id="video-proyectos"><video controls preload="none" playsinline poster="videos/proyectos.jpg?v=e7139f11b6" src="videos/proyectos.mp4?v=6b011763b0" aria-label="Tus proyectos al abrir"></video><h3>Tus proyectos al abrir</h3><p>Una sola ventana: NoxCut se abre con todos tus proyectos, cada uno con un fotograma de su vídeo. Se buscan mientras escribes y, al elegir uno, la misma ventana pasa al editor. <span class="dur">0:22</span></p></article>
+<article id="video-elementos"><video controls preload="none" playsinline poster="videos/elementos.jpg?v=42365cc319" src="videos/elementos.mp4?v=a88466648a" aria-label="Elementos: arrastrar y buscar"></video><h3>Elementos: arrastrar y buscar</h3><p>Imágenes y GIF arrastrados desde el Explorador o el Finder a cualquier parte de la ventana. Con cientos, el buscador los encuentra mientras escribes; luego, al vídeo. <span class="dur">0:17</span></p></article>
+<article id="video-guia"><video controls preload="none" playsinline poster="videos/guia.jpg?v=1e98a6ee49" src="videos/guia.mp4?v=63d2afbcbf" aria-label="La guía: cada parte, explicada en su sitio"></video><h3>La guía: cada parte, explicada en su sitio</h3><p>«📖 Guía»: elige un tema (por ejemplo, «Cómo hacer cortes») y NoxCut te lleva a esa parte, con una explicación junto a cada botón. O el recorrido completo, que se para y se sigue cuando quieras. <span class="dur">0:27</span></p></article>
+<article id="video-seleccion"><video controls preload="none" playsinline poster="videos/seleccion.jpg?v=9e7ed05778" src="videos/seleccion.mp4?v=5453f9e22c" aria-label="Seleccionar, borrar y agrupar trozos"></video><h3>Seleccionar, borrar y agrupar trozos</h3><p>Como en cualquier editor: arrastrar para seleccionar varios trozos, Mayús + clic, borrar un tramo de todas las pistas desde la regla y agrupar trozos en un bloque que se mueve entero. <span class="dur">0:25</span></p></article></div></div></section>
 
 <section id="descargar"><div class="wrap">
   <div class="head"><h2>Descargar</h2><p>NoxCut es gratis para descargar. Para usarlo hace falta una licencia, una por persona y ordenador: la pides por el formulario de contacto y te la mandamos.</p></div>
@@ -315,37 +319,53 @@ footer a { color: var(--muted); }
   <div><div class="head" style="margin-bottom:18px"><h2>Quiénes somos</h2></div>
     <p>NoxCut lo hace <b>Garzanox</b>, streamer de shooters, para editar sus propios directos. Empezó como una herramienta para sacar los subtítulos de sus clips y ha crecido con lo que pedían su editora y la comunidad.</p><p>Cada idea entra por el buzón del propio programa y muchas salen en la siguiente versión: casi cada día hay algo nuevo.</p></div>
   <div class="redes"><h3>Sigue a NoxCut en</h3><ul><li><a href="https://www.instagram.com/noxcut.es/" rel="me noopener" target="_blank">Instagram</a></li><li><a href="https://www.tiktok.com/@noxcut.oficial" rel="me noopener" target="_blank">TikTok</a></li><li><a href="https://x.com/NoxCutOficial" rel="me noopener" target="_blank">X</a></li></ul><h3>Sigue a Garzanox en</h3><ul><li><a href="https://www.twitch.tv/garzanox" rel="me noopener" target="_blank">Twitch</a></li><li><a href="https://www.tiktok.com/@garzanox" rel="me noopener" target="_blank">TikTok</a></li><li><a href="https://www.instagram.com/garzanox/" rel="me noopener" target="_blank">Instagram</a></li></ul>
-    <a class="btn main" href="https://ko-fi.com/garzanox" rel="noopener" target="_blank">Apoya a Garzanox en Ko-fi (sus directos y su contenido)</a>
-    <p style="color:var(--muted);font-size:.88rem;margin-top:10px">Lo que se aporta en Ko-fi es para Garzanox como creador de contenido. NoxCut no se financia con donaciones.</p></div>
+    </div>
 </div></section>
 
 <section id="contacto"><div class="wrap">
   <div class="head"><h2>Contacto</h2><p>¿Quieres probar NoxCut o tienes una pregunta? Escríbenos. Lo leen Garzanox y su editora; se guarda en Cloudflare, llega al correo de NoxCut (Gmail) y puede procesarse con Claude (Anthropic) para contestarte. Más información en la <a href="privacidad/">política de privacidad</a>.</p></div>
   <form id="form" action="https://noxcut-buzon.garzanox.workers.dev/v1/contacto" method="post" novalidate>
-    <label>Tu nombre o nick<input name="nombre" maxlength="60" autocomplete="nickname"></label>
-    <label>Dónde te contestamos<input name="contacto" maxlength="120" required placeholder="Correo, Discord, Instagram…"></label>
+    <label>Tu nombre o nick (opcional)<input name="nombre" maxlength="60" autocomplete="nickname"></label>
+    <label>Dónde te contestamos<input name="contacto" maxlength="120" required placeholder="Correo, Discord o Instagram (uno basta)"></label>
     <label>Motivo<select name="motivo"><option value="Quiero probar NoxCut">Quiero probar NoxCut</option><option value="Tengo una pregunta">Tengo una pregunta</option><option value="Otra cosa">Otra cosa</option></select></label>
-    <label>Código de tu ordenador (si ya lo tienes)<input name="codigo" maxlength="30" placeholder="NXC-XXXX-XXXX-XXXX" autocomplete="off"></label>
-    <label class="full">Mensaje<textarea name="mensaje" maxlength="3000" required placeholder="Cuéntanos qué haces: qué juegas, dónde subes tus vídeos…"></textarea></label>
+    <label>Código de tu ordenador (opcional, si ya lo tienes)<input name="codigo" maxlength="30" placeholder="NXC-XXXX-XXXX-XXXX" autocomplete="off"></label>
+    <label class="full">Mensaje<textarea name="mensaje" maxlength="3000" required placeholder="Cuéntanos qué necesitas. No pongas contraseñas ni datos de otras personas."></textarea></label>
     <div class="trampa" aria-hidden="true"><label>Web<input name="web" tabindex="-1" autocomplete="off"></label></div>
+    <div class="casillas">
+      <label><input type="checkbox" name="condiciones" value="2026-11-27" required autocomplete="off"><span>He leído y acepto las <a href="condiciones/" target="_blank" rel="noopener">Condiciones</a>.</span></label>
+      <label><input type="checkbox" name="privacidad" value="2026-11-27" required autocomplete="off"><span>He leído la <a href="privacidad/" target="_blank" rel="noopener">Política de Privacidad</a>.</span></label>
+    </div>
     <div class="enviar"><button class="btn main" type="submit">Enviar</button>
       <span id="estado" role="status" aria-live="polite"></span></div>
   </form>
 </div></section>
 </main>
-<footer><div class="wrap"><span>NoxCut™ · © 2026 Garzanox</span><span>Obra registrada · <a href="presentacion/">Presentación del proyecto</a> · <a href="privacidad/">Política de privacidad</a> · <a href="condiciones/">Condiciones de uso</a> · Actualizado el 23/11/2026</span></div></footer>
-<script>const TEXTOS = {"falta": "Rellena dónde contestarte y el mensaje.", "enviando": "Enviando…", "ok": "¡Recibido! Te contestaremos lo antes posible.", "error": "No se ha podido enviar. Prueba otra vez en un rato."};
+<footer><div class="wrap"><span>NoxCut™ · © 2026 Garzanox</span><span>Obra registrada · <a href="presentacion/">Presentación del proyecto</a> · <a href="aviso-legal/">Aviso legal</a> · <a href="privacidad/">Política de privacidad</a> · <a href="condiciones/">Condiciones de uso</a> · <a href="cookies/">Cookies</a> · <a href="reembolsos/">Reembolsos</a> · Actualizado el 27/11/2026</span></div></footer>
+<script>const TEXTOS = {"falta": "Rellena dónde contestarte y el mensaje.", "casillas": "Para enviar, marca las dos casillas.", "enviando": "Enviando…", "ok": "¡Recibido! Te contestaremos lo antes posible.", "error": "No se ha podido enviar. Prueba otra vez en un rato."};
 // Los enlaces de antes a una diapositiva (…/#diapositiva-3) siguen yendo a la presentación.
 if (/^#(diapositiva|slide)-\d+$/.test(location.hash)) location.replace("presentacion/" + location.hash);
 const inicio = Date.now();
 const form = document.getElementById("form");
 const estado = document.getElementById("estado");
+// El código del ordenador solo se pide (y se manda) si es para probar NoxCut.
+const ponCodigo = () => {
+  const fuera = form.motivo.selectedIndex !== 0;
+  form.codigo.disabled = fuera; form.codigo.closest("label").hidden = fuera;
+};
+form.motivo.addEventListener("change", ponCodigo);
+form.addEventListener("reset", () => setTimeout(ponCodigo));
+ponCodigo();
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const datos = Object.fromEntries(new FormData(form));
   if (datos.contacto.trim().length < 3 || datos.mensaje.trim().length < 5) {
     estado.className = "mal"; estado.textContent = TEXTOS.falta; return;
   }
+  if (!datos.condiciones || !datos.privacidad) {
+    estado.className = "mal"; estado.textContent = TEXTOS.casillas; return;
+  }
+  datos.acepta = { condiciones: datos.condiciones, privacidad: datos.privacidad };     // la versión de cada documento
+  delete datos.condiciones; delete datos.privacidad;
   datos.t = Date.now() - inicio;
   datos.idioma = document.documentElement.lang;
   const boton = form.querySelector("button");
